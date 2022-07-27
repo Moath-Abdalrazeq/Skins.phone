@@ -5,8 +5,6 @@ import ExclusiveCollections from './exclusive-collections.vue';
 import SearchHero from './search-hero.vue';
 import SkinsForSmartphone from './skins-for-smartphone.vue';
 import UserHero from './user-hero.vue';
- 
- 
 import HomepageVideo from './homepage-video.vue';
 export default defineComponent({
     name: "skinsPhone",
