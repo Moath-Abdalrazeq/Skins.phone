@@ -11,14 +11,10 @@ export default defineComponent({
 </script>
 <template>
     <div class="dropdown">
-   <button class="dropbtn  ">  <a class="    "> Exclusive Collections </a>  <arrow-hover></arrow-hover> </button>
+   <button class="dropbtn  ">  <a class="    "> Skins for laptops & tablets </a>  <arrow-hover></arrow-hover> </button>
    <div class="dropdown-content">
-    <a href="#">CLEARANCE</a>
-    <a href="#">3D CHARCOAL</a>
-    <a href="#">3D HONEYCOMB</a>
-    <a href="#">3D FORGED</a>
-    <a href="#">TEAL</a>
-    <a href="#">SILVERY Edition</a> 
+    <a href="#">MacBook Skins</a>
+    <a href="#">iPad Skins </a>
   </div>
   </div>  
 </template>
@@ -37,7 +33,6 @@ export default defineComponent({
 }
 .dropdown-content {
   display: none;
-  z-index: 5;
   position: absolute;
   background-color: black;
     font-size: 12px;

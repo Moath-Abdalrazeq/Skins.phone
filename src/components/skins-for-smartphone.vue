@@ -1,7 +1,9 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
+import arrowHover from './arrow-hover.vue'
 
 export default defineComponent({
+  components: { arrowHover },
     setup() {
         
     },
@@ -11,7 +13,7 @@ export default defineComponent({
 <template>
 
      <div class="dropdown">
- <button class="dropbtn">  <a class="   "> Skins for smartphone  </a> </button>
+ <button class="dropbtn">  <a class="   "> Skins for smartphone  </a> <arrow-hover></arrow-hover> </button>
    <div class="dropdown-content">
     <a href="#">iPhone Skins</a>
     <a href="#">Samsung Skins</a>
@@ -23,36 +25,35 @@ export default defineComponent({
 </template>
 
 <style scoped>
- .dropdown {
+  .dropdown {
     
   position: relative;
   display: inline-block;
 }
 .dropbtn {
-  background-color: white;
-  color: black;
-    font-size: 16px;
+  background-color: inherit;
+  color:white;
+  font-size: 12px;
   border: none;
-
-  
+  outline: none;  
 }
 .dropdown-content {
   display: none;
+  z-index: 6;
   position: absolute;
   background-color: black;
-  min-width: 160px;
-  
-
+    font-size: 12px;
+    min-width: 100%;
 }
 .dropdown-content a {
   color: white;
-  padding: 15px;
+  padding:5px;
   text-decoration: none;
   display: block;
 }
-.dropdown-content a:hover {background-color:darkgrey;}
+.dropdown-content a:hover {background-color:black; font-family: Monospace; }
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {display: block;  }
 
-.dropdown:hover .dropbtn {background-color: white;}
+.dropdown:hover .dropbtn {background-color: black; text-decoration: underline;}
 </style>

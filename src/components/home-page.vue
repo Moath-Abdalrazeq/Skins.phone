@@ -6,9 +6,12 @@ import SearchHero from './search-hero.vue';
 import SkinsForSmartphone from './skins-for-smartphone.vue';
 import UserHero from './user-hero.vue';
 import HomepageVideo from './homepage-video.vue';
+import SkinsForLaptopsTablets from './skins-for-laptops-tablets.vue';
+import HelpAndFaq from './help-and-faq.vue';
+ 
 export default defineComponent({
     name: "skinsPhone",
-      components: {SearchHero, UserHero, SkinsForSmartphone, ExclusiveCollections, HomepageVideo},
+      components: {SearchHero, UserHero, SkinsForSmartphone, ExclusiveCollections, HomepageVideo, SkinsForLaptopsTablets, HelpAndFaq },
 
     setup() {
         return {skinsPhone   };
@@ -22,7 +25,7 @@ export default defineComponent({
  
 <div class="main"> 
       <div class="logo">
-   <img :src="skinsPhone" alt="" class=" "/>
+   <img :src="skinsPhone" alt="" class="logo "/>
    <span class="sp"> Skins.phone </span> 
       </div>
 
@@ -31,24 +34,23 @@ export default defineComponent({
  <a class=""> Home </a>
  <exclusive-collections></exclusive-collections>
  <skins-for-smartphone></skins-for-smartphone>
-   
+  
+
 </div>
 <div class="menu-links width-full main-links    ">
-  <a class="  "> Skins for laptops & tablets </a>
-   <a class=" ">EZY Cases   </a>
-   <a class=" ">   Help & FAQ  </a>  
+   <skins-for-laptops-tablets></skins-for-laptops-tablets>
+   <a class=" ">EZY Cases</a>
+   <help-and-faq></help-and-faq>
 </div>
 </div>
-    <div>
-   <search-hero></search-hero>  
- <user-hero></user-hero>  
+    <div class="menu-links">
+        
+    <search-hero></search-hero>
+   <user-hero></user-hero>  
     </div>
-     
 </div>
 </div>
- 
 </template>
-
 <style scoped>
 .logo {
    display: flex; 
@@ -58,34 +60,29 @@ export default defineComponent({
  
  }
  .sp{
-          
+    color: white; 
     margin-top: auto;
     margin-bottom: auto;
      font-family:Cursive  ;
- 
  }
 .main {
      display: flex;
   justify-content: space-around ;
-
 }
-
  .width-full {
     width: 100%;
-     
-
+    padding-top: 10px;
  }
  .menu-links {
     display:flex;
     justify-content: space-around ;
+    color:white;
+    width: 50px; 
  }
-
   .main-links {
      width: 400px;
   height: 50px;
   display: flex;
   justify-content: space-between;
   }
-  
-
 </style>

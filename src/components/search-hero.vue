@@ -1,7 +1,10 @@
 <template>
-    <svg xmlns="http://www.w3.org/2000/svg" class="logo-search" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <a>  <svg xmlns="http://www.w3.org/2000/svg" class="logo-search" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
   <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-</svg>
+</svg> </a>
+
+ 
+ 
 </template>
 
 <script lang="ts">
@@ -18,8 +21,13 @@ export default defineComponent({
  .logo-search {
     height: 15px;
     width: 15px;
-
-
-    
  }
+ .search {
+       color: white;
+  padding:5px;
+  text-decoration: none;
+  display: block;
+ }
+ .search a:hover {background-color:black; font-family: Monospace; }
+
 </style>

@@ -1,6 +1,4 @@
-<template>
- 
-     
+<template>  
 <video class="video"      autoplay loop>
   <source :src="backgroundVideo" type="video/mp4">
    
