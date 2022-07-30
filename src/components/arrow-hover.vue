@@ -22,8 +22,7 @@ export default defineComponent({
     width: 10px;
     color: white;
   vertical-align: middle;
-  
-    
+ 
  }
  
    

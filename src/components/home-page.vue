@@ -20,9 +20,10 @@ export default defineComponent({
 </script>
  
 <template>
-<homepage-video></homepage-video>
+ <!-- -->
+ <homepage-video></homepage-video>
 <div class="width-full">
- 
+  
 <div class="main"> 
       <div class="logo">
    <img :src="skinsPhone" alt="" class="logo "/>
@@ -57,13 +58,19 @@ export default defineComponent({
   width: 50px;
   height: 50px;
   border-radius: 50%;
+position: relative;
+top: 5px;
  
  }
  .sp{
+    
     color: white; 
     margin-top: auto;
     margin-bottom: auto;
      font-family:Cursive  ;
+     margin: 10px;
+     padding: 5px; 
+    
  }
 .main {
      display: flex;
@@ -72,12 +79,14 @@ export default defineComponent({
  .width-full {
     width: 100%;
     padding-top: 10px;
+     
  }
  .menu-links {
     display:flex;
     justify-content: space-around ;
     color:white;
     width: 50px; 
+    
  }
   .main-links {
      width: 400px;
@@ -85,4 +94,5 @@ export default defineComponent({
   display: flex;
   justify-content: space-between;
   }
+  
 </style>

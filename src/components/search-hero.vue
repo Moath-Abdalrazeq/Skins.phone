@@ -21,6 +21,10 @@ export default defineComponent({
  .logo-search {
     height: 15px;
     width: 15px;
+       position: relative;
+       top: 27px;
+       
+ 
  }
  .search {
        color: white;
