@@ -19,8 +19,9 @@ export default defineComponent({
 })
 </script>
  
-<template>
+<template  >
  <!---->
+ 
   <homepage-video></homepage-video>
 <div class="width-full">
  <!-- logo -->
@@ -49,8 +50,10 @@ export default defineComponent({
     </div>
 </div>
 </div>
+ 
 </template>
 <style scoped>
+ 
 .logo {
    display: flex; 
   width: 50px;
@@ -77,6 +80,7 @@ top: 5px;
  .width-full {
     width: 100%;
     padding-top: 10px;
+     
      
  }
  .menu-links {
