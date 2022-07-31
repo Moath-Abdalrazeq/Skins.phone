@@ -20,23 +20,21 @@ export default defineComponent({
 </script>
  
 <template>
- <!-- -->
- <homepage-video></homepage-video>
+ <!---->
+  <homepage-video></homepage-video>
 <div class="width-full">
-  
+ <!-- logo -->
 <div class="main"> 
       <div class="logo">
    <img :src="skinsPhone" alt="" class="logo "/>
    <span class="sp"> Skins.phone </span> 
       </div>
-
-<div class="  ">
+<!-- menu -->
+<div >
 <div class="menu-links width-full main-links">
  <a class=""> Home </a>
  <exclusive-collections></exclusive-collections>
  <skins-for-smartphone></skins-for-smartphone>
-  
-
 </div>
 <div class="menu-links width-full main-links    ">
    <skins-for-laptops-tablets></skins-for-laptops-tablets>
@@ -44,8 +42,8 @@ export default defineComponent({
    <help-and-faq></help-and-faq>
 </div>
 </div>
+<!-- logo search and user -->
     <div class="menu-links">
-        
     <search-hero></search-hero>
    <user-hero></user-hero>  
     </div>
@@ -86,7 +84,7 @@ top: 5px;
     justify-content: space-around ;
     color:white;
     width: 50px; 
-    
+    flex:1 0 1;
  }
   .main-links {
      width: 400px;
