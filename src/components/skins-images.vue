@@ -17,8 +17,8 @@ import samsungImge1 from '../assets/img/Samsung Galaxy S22 ULTRA SIGNATURE Camou
 </script>
 <template  >
      <div class="img" >
-   <a>  <img :src="samsungImge1" />  </a>
-    <a> <img :src="samsungImge2"  /> </a>
+   <a> <img :src="samsungImge1" /> </a>
+   <a> <img :src="samsungImge2"  /> </a>
    <a> <img :src="samsungImge3"   /> </a>
    <a> <img :src="samsungImge4"  /> </a>
    <a> <img :src="samsungImge5" /> </a>
@@ -27,7 +27,7 @@ import samsungImge1 from '../assets/img/Samsung Galaxy S22 ULTRA SIGNATURE Camou
 <style scoped>
  
   .img{
-     display: flex;
+      display: flex;
     justify-content:space-between;
    height: 170px;
     cursor: pointer;
@@ -37,5 +37,6 @@ import samsungImge1 from '../assets/img/Samsung Galaxy S22 ULTRA SIGNATURE Camou
     display:flex; 
      
  }
+ 
  
 </style>

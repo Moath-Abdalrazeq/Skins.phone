@@ -10,17 +10,19 @@ import SkinsForLaptopsTablets from './skins-for-laptops-tablets.vue';
 import HelpAndFaq from './help-and-faq.vue';
  import skinsImages from './skins-images.vue'
 import CartHero from './cart-hero.vue';
+import searchBar from './search-bar.vue'
+import imgeDesc from './imge-desc.vue'
+ 
  export default defineComponent({
     name: "skinsPhone",
-      components: {SearchHero, UserHero, SkinsForSmartphone, ExclusiveCollections, HomepageVideo, SkinsForLaptopsTablets, HelpAndFaq ,skinsImages, CartHero},
+      components: {SearchHero, UserHero, SkinsForSmartphone, ExclusiveCollections, HomepageVideo, SkinsForLaptopsTablets, HelpAndFaq ,skinsImages, CartHero,searchBar,imgeDesc },
     setup() {
         return {skinsPhone   };
     },
 })
 </script>
 <template  >
- <!---->
- <meta content='width=device-width, initial-scale=1' name='viewport'/>
+ <!--video-->
   <homepage-video></homepage-video>
 <div class="width-full">
  <!-- logo -->
@@ -44,16 +46,17 @@ import CartHero from './cart-hero.vue';
    <help-and-faq></help-and-faq>
 </div>
 </div>
-<!-- logo search and user -->
+<!-- logo search , user and cart  -->
     <div class="menu-links">
       <nav class=" ">
-  <router-link to="searchHero"><search-hero></search-hero></router-link>
-   <router-link to="userHero"><user-hero></user-hero> </router-link> 
-   <router-link to="cartHero"><cart-hero></cart-hero> </router-link>
+     <search-bar></search-bar>
+    <user-hero></user-hero>  
+    <cart-hero></cart-hero> 
       </nav>
     </div>  
 </div>
 </div>
+<!-- Skins images and description for  GALAXY S22 ULTRA  -->
 <div class="header">
 <div>
     <span style="padding:300px;"> Introducing GALAXY S22 ULTRA</span>
@@ -61,13 +64,7 @@ import CartHero from './cart-hero.vue';
    </div>   
    <div>
  <skins-images></skins-images>
- <div  class="img-desc">
-   <a > Samsung Galaxy S22 <br> ULTRA SIGNATURE Camouflage  Dark Slate Skin <br><br> 25₪ </a>
-   <a > Samsung Galaxy S22 <br> ULTRA SIGNATURE Rainy Night in Bangkok Skin<br><br> 25₪</a>
-   <a > Samsung Galaxy S22 <br> ULTRA SIGNATURE Blue HEXAGON Skin<br><br> 25₪</a>
-   <a > Samsung Galaxy S22 <br> ULTRA SIGNATURE Abstract Velvet Skin<br><br> 25₪ </a> 
-   <a > Samsung Galaxy S22 <br> ULTRA SIGNATURE TITANIUM Metallic Skin<br><br>25₪ </a>
-  </div>
+ <imge-desc></imge-desc>
    </div>
   </div>
 </template>
@@ -100,8 +97,8 @@ top: 5px;
     display:flex;
     justify-content: space-between ;
     color:white;
-    width: 50px; 
-    flex:1 0 1;
+    width: 80px; 
+   
  }
   .main-links {
      width: 400px;
@@ -112,6 +109,7 @@ top: 5px;
   nav a{
 color: white;
 text-decoration: none;
+ 
   }
   .header{
    color: darkgray; 
@@ -119,12 +117,4 @@ text-decoration: none;
     padding:   40px;
     margin: 200px 100px;
 }
-.img-desc{
-   display:flex;
-   margin: 0 45px;
-} 
- .img-desc a{
-   display: flex;
-    color: darkgray;
- }
 </style>
