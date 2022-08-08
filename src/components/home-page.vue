@@ -12,18 +12,19 @@ import HelpAndFaq from './help-and-faq.vue';
 import CartHero from './cart-hero.vue';
 import searchBar from './search-bar.vue'
 import imgeDesc from './imge-desc.vue'
- 
+import BaseSlider from './base-slider.vue'
  export default defineComponent({
     name: "skinsPhone",
-      components: {SearchHero, UserHero, SkinsForSmartphone, ExclusiveCollections, HomepageVideo, SkinsForLaptopsTablets, HelpAndFaq ,skinsImages, CartHero,searchBar,imgeDesc },
+      components: {SearchHero, UserHero, SkinsForSmartphone, ExclusiveCollections, HomepageVideo, SkinsForLaptopsTablets, HelpAndFaq ,skinsImages, CartHero,searchBar,imgeDesc,BaseSlider },
     setup() {
-        return {skinsPhone   };
+        return {skinsPhone};
     },
 })
 </script>
 <template  >
  <!--video-->
   <homepage-video></homepage-video>
+   <section>
 <div class="width-full">
  <!-- logo -->
 <div class="main"> 
@@ -56,16 +57,20 @@ import imgeDesc from './imge-desc.vue'
     </div>  
 </div>
 </div>
+   </section>
 <!-- Skins images and description for  GALAXY S22 ULTRA  -->
 <div class="header">
 <div>
-    <span style="padding:300px;"> Introducing GALAXY S22 ULTRA</span>
-    <a>View all</a>
+    <span> Introducing GALAXY S22 ULTRA</span>
+    <a >View all</a>
    </div>   
    <div>
  <skins-images></skins-images>
  <imge-desc></imge-desc>
    </div>
+  </div>
+  <div class="slide-display">
+  <base-slider></base-slider>
   </div>
 </template>
 <style scoped>
@@ -90,15 +95,14 @@ top: 5px;
   justify-content: space-around ;
 }
  .width-full {
-    width: 100%;
-    padding-top: 10px;  
+    width: 100%; 
+    padding-top: 20px; 
  }
  .menu-links {
     display:flex;
     justify-content: space-between ;
     color:white;
     width: 80px; 
-   
  }
   .main-links {
      width: 400px;
@@ -109,12 +113,20 @@ top: 5px;
   nav a{
 color: white;
 text-decoration: none;
- 
   }
   .header{
    color: darkgray; 
     text-align: center;
     padding:   40px;
     margin: 200px 100px;
+    font-size: 25px;
+}
+.header a{
+  display: flex;
+   justify-content: flex-end;
+}
+.slide-display{
+  display: flex;
+  justify-content: center;
 }
 </style>

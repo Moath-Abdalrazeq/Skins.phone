@@ -20,7 +20,6 @@ export default defineComponent({
 <style scoped>
 .img-desc{
    display:flex;
-   margin: 0 45px;
    flex-flow:row;
     
 } 
