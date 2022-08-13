@@ -1,7 +1,7 @@
  
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import homePage from '../components/home-page.vue';
- 
+ import skinsPage from '../components/skins-page.vue'
  
 const routes:Array<RouteRecordRaw> =[
 	{
@@ -9,8 +9,13 @@ const routes:Array<RouteRecordRaw> =[
 		name: 'homePage',
 		component: homePage,
 	},
-	
- 
+	{
+		path: '/skinsPage',
+		name: 'skinsPage',
+		component: skinsPage,
+		 
+	},
+
 ];
 
 const router = createRouter({

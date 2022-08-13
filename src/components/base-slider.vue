@@ -1,108 +1,46 @@
 <template>
-<button @click="prev"><previous-heroicon></previous-heroicon></button>
-
-<div v-for="(slid,index) in tempSlide" :key="index">
- <base-slide :slidData="slid"></base-slide>
-</div>
-
- <button @click="next"><next-heroicon></next-heroicon></button>
  
+<div><button @click="prev" class="button"><previous-heroicon class="svg"></previous-heroicon></button></div>
+<div v-for="(slid,index) in tempSlide" :key="index">
+   <router-link to="/skinsPage"> 
+   <button @click="getId(slid.id)" >
+ <base-slide :slidData="slid"></base-slide>
+  </button>
+ </router-link>
+ 
+</div>
+ <div><button @click="next" class="button"><next-heroicon class="svg"></next-heroicon></button></div>
+   
 </template>
-
 <script lang="ts">
+import {getIphoneData,setIphoneById} from '../services/base-skins.service'
+
 import { defineComponent, onMounted, ref } from 'vue'
 import previousHeroicon from './previous-heroicon.vue'
-import slideImge from "../assets/img/iphone/imge-one.webp"
-import baseSlide from './base-slide.vue'
+ import baseSlide from './base-slide.vue'
 import NextHeroicon from './next-heroicon.vue'
-
-
 export default defineComponent({
+ 
   components: { baseSlide ,previousHeroicon, NextHeroicon},
     setup() {
-         
         let currentSlide =ref(5)
         let tempIndex =ref(0)
         let tempSlide =ref([])
-        let slids =ref([
-            {
-                firstImg:"slideImge" ,
-                secImg:"slideImge" ,
-                desc:"iPhone 13 Pro MAX SIGNATURE Art in FLORENCE Skin",
-                price:"25"
-            
-            },
-              {
-                firstImg:"slideImge" ,
-                secImg:"slideImge" ,
-                desc:"iPhone 13 Pro MAX SIGNATURE Art in FLORENCE Skin",
-                price:"25"
-            
-            },
-              {
-                firstImg:"slideImge" ,
-                secImg:"slideImge" ,
-                desc:"iPhone 13 Pro MAX SIGNATURE Art in FLORENCE Skin",
-                price:"25"
-            
-            },
-              {
-                firstImg:"slideImge" ,
-                secImg:"slideImge" ,
-                desc:"iPhone 13 Pro MAX SIGNATURE Art in FLORENCE Skin",
-                price:"25"
-            
-            },
-              {
-                firstImg:"slideImge" ,
-                secImg:"slideImge" ,
-                desc:"iPhone 13 Pro MAX SIGNATURE Art in FLORENCE Skin",
-                price:"25"
-            
-            },
-             {
-                firstImg:"slideImge" ,
-                secImg:"slideImge" ,
-                desc:"next",
-                price:"25"
-            
-            },
-              {
-                firstImg:"slideImge" ,
-                secImg:"slideImge" ,
-                desc:"next",
-                price:"25"
-            
-            },
-              {
-                firstImg:"slideImge" ,
-                 secImg:"slideImge" ,
-                desc:"next",
-                price:"25"
-            
-            },
-              {
-                firstImg:"slideImge" ,
-                secImg:"slideImge" ,
-                desc:"next",
-                price:"25"
-            
-            },
-              {
-                firstImg:"slideImge" ,
-                secImg:"slideImge" ,
-                desc:" next",
-                price:"25"
-            
-            },
-       
-       
-        ]);
+          let IphoneData =ref(
+           getIphoneData()
+          );
+
+            function getId (param:number) {
+       setIphoneById(param)
+
+       console.log('param',param)
+    }
+     
         function initSlids(){
             tempSlide.value=[];
-            for(let i=tempIndex.value;i < slids.value.length;i++){
+            for(let i=tempIndex.value;i < IphoneData.value.length;i++){
               if (i<currentSlide.value) {
-                tempSlide.value.push(slids.value[i]);
+                tempSlide.value.push(IphoneData.value[i]);
               }
             }
         }
@@ -115,24 +53,20 @@ export default defineComponent({
       
         }
           function next(){
-            if (slids.value.length > currentSlide.value   ) {
+            if (IphoneData.value.length -1 >= currentSlide.value   ) {
                  currentSlide.value = currentSlide.value + 5;
                  tempIndex.value =tempIndex.value + 5;
                 initSlids();
-            }else{
-            currentSlide.value = currentSlide.value ;   
-            tempIndex.value =tempIndex.value  ;
-            initSlids();
-            }
-          
+            } 
         }
         function init( ) {
             initSlids();
         }
         onMounted(init);
         return{
-            slideImge,currentSlide,slids,prev,next,tempSlide,initSlids
+            currentSlide,IphoneData,prev,next,tempSlide,initSlids,getId
         };
+      
     },
 })
 </script>
@@ -140,16 +74,21 @@ export default defineComponent({
 .text-color {
     color: white;
 }
-
-button{
-     margin: 20px 7px;
-        
+ 
+.button{
+     margin: 100px 0px;
     cursor: pointer;
     border: none;
          border-radius: 50%;
      background-color:#fc4f00;
     width: 40px;
     height: 40px;
-    
 }
+ 
+.svg{
+  height: 15px;
+   width: 15px;
+}
+
+ 
 </style>

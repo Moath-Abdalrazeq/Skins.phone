@@ -16,13 +16,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
- .logo-login {
- height: 15px;
-    width: 15px;
-    position: relative;
-     top: 27px;
  
-    
- }
    
 </style>

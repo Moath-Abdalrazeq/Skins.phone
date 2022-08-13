@@ -13,21 +13,5 @@ export default defineComponent({
 })
 </script>
 <style scoped>
- .logo-search {
-    height: 15px;
-   width: 15px;
-   position: relative;
-   top: 32px; 
-  color: white;
-  padding:5px;
-  text-decoration: none;
-   
- }
- .search {
-  color: white;
-  padding:5px;
-  text-decoration: none;
-  display: block;
- }
- .search a:hover {background-color:black; font-family: Monospace; }
+ 
  </style>

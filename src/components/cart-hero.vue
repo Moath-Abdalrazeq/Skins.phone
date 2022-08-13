@@ -17,13 +17,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
- .logo-cart {
- height: 15px;
-    width: 15px;
-    position: relative;
-     top: 27px;
  
-    
- }
    
 </style>

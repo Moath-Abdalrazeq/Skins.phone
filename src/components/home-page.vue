@@ -11,11 +11,11 @@ import HelpAndFaq from './help-and-faq.vue';
  import skinsImages from './skins-images.vue'
 import CartHero from './cart-hero.vue';
 import searchBar from './search-bar.vue'
-import imgeDesc from './imge-desc.vue'
 import BaseSlider from './base-slider.vue'
+import ImgeSamsungS22Ultra from './imge-samsung-s22-ultra.vue';
  export default defineComponent({
     name: "skinsPhone",
-      components: {SearchHero, UserHero, SkinsForSmartphone, ExclusiveCollections, HomepageVideo, SkinsForLaptopsTablets, HelpAndFaq ,skinsImages, CartHero,searchBar,imgeDesc,BaseSlider },
+      components: {SearchHero,  UserHero, SkinsForSmartphone, ExclusiveCollections, HomepageVideo, SkinsForLaptopsTablets, HelpAndFaq ,skinsImages, CartHero,searchBar ,BaseSlider, ImgeSamsungS22Ultra },
     setup() {
         return {skinsPhone};
     },
@@ -48,12 +48,10 @@ import BaseSlider from './base-slider.vue'
 </div>
 </div>
 <!-- logo search , user and cart  -->
-    <div class="menu-links">
-      <nav class=" ">
-     <search-bar></search-bar>
-    <user-hero></user-hero>  
-    <cart-hero></cart-hero> 
-      </nav>
+    <div class="menu-links" >
+    <div> <search-bar></search-bar> </div>
+  <div>  <user-hero class="svg-width" ></user-hero>  </div>
+     <div> <cart-hero class="svg-width"></cart-hero> </div>
     </div>  
 </div>
 </div>
@@ -64,14 +62,22 @@ import BaseSlider from './base-slider.vue'
     <span> Introducing GALAXY S22 ULTRA</span>
     <a >View all</a>
    </div>   
-   <div>
- <skins-images></skins-images>
- <imge-desc></imge-desc>
+   <div class="slide-display">
+  <imge-samsung-s-22-ultra></imge-samsung-s-22-ultra>
    </div>
   </div>
-  <div class="slide-display">
+ <!-- Skins images and description for  IPHONE 13 PRO  -->
+  <div class="header">
+   <div>
+    <span>  iPhone 13 Pro MAX Skins & iPhone 13 PRO Skins</span>
+    <a >View all</a>
+    </div>
+    <div class="slide-display">
   <base-slider></base-slider>
   </div>
+ 
+  </div>
+   
 </template>
 <style scoped>
 .logo {
@@ -102,7 +108,9 @@ top: 5px;
     display:flex;
     justify-content: space-between ;
     color:white;
-    width: 80px; 
+    height: fit-content;
+    
+     
  }
   .main-links {
      width: 400px;
@@ -128,5 +136,10 @@ text-decoration: none;
 .slide-display{
   display: flex;
   justify-content: center;
+  
+}
+.svg-width{
+ height: 15px;
+    width: 15px;
 }
 </style>

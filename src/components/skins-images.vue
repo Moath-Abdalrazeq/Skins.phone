@@ -1,10 +1,10 @@
 <script lang="ts">
  import { defineComponent } from 'vue'
-import samsungImge1 from '../assets/img/Samsung Galaxy S22 ULTRA SIGNATURE Camouflage Dark Slate Skin.webp' 
- import samsungImge2 from '../assets/img/Samsung Galaxy S22 ULTRA SIGNATURE Rainy Night in Bangkok Skin.webp' 
-  import samsungImge3 from '../assets/img/Samsung Galaxy S22 ULTRA SIGNATURE Blue HEXAGON Skin.webp' 
-  import samsungImge4 from '../assets/img/Samsung Galaxy S22 ULTRA SIGNATURE Abstract Velvet Skin.webp' 
-  import samsungImge5 from '../assets/img/Samsung Galaxy S22 ULTRA BRUSHED TITANIUM Metallic Skin.webp' 
+import samsungImge1 from '../assets/img/samsung-s22-ultra/Samsung Galaxy S22 ULTRA SIGNATURE Camouflage Dark Slate Skin.webp' 
+ import samsungImge2 from '../assets/img/samsung-s22-ultra/Samsung Galaxy S22 ULTRA SIGNATURE Rainy Night in Bangkok Skin.webp' 
+  import samsungImge3 from '../assets/img/samsung-s22-ultra/Samsung Galaxy S22 ULTRA SIGNATURE Blue HEXAGON Skin.webp' 
+  import samsungImge4 from '../assets/img/samsung-s22-ultra/Samsung Galaxy S22 ULTRA SIGNATURE Abstract Velvet Skin.webp' 
+  import samsungImge5 from '../assets/img/samsung-s22-ultra/Samsung Galaxy S22 ULTRA BRUSHED TITANIUM Metallic Skin.webp' 
  export default defineComponent  ({
     name: "skinsImages",
       components:  {},
