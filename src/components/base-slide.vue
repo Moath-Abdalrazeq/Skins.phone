@@ -5,7 +5,6 @@
     <div class="text-color center ">{{slidData.price}}</div> 
 </template>
 <script lang="ts">
-
 import { defineComponent,ref, watch } from 'vue'
  export default defineComponent({
     
@@ -29,8 +28,7 @@ import { defineComponent,ref, watch } from 'vue'
 .text-color {
     color: darkgrey;
      font-size: 20px;
-     flex-flow:row;
-     
+     flex-flow:row;  
 }
 .center{
     display: block;
@@ -40,5 +38,4 @@ import { defineComponent,ref, watch } from 'vue'
 img{
 height: 250px;
 }
- 
 </style>
