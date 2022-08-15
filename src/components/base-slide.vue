@@ -1,25 +1,27 @@
 <template>
- 
      <img :src="imgeHover"  
-    @mouseover="imgeHover=slidData.secImg" @mouseleave="imgeHover=slidData.firstImg"/> 
+     @mouseover="imgeHover=slidData.secImg" @mouseleave="imgeHover=slidData.firstImg"/> 
     <div class="text-color ">{{slidData.desc}}</div> 
     <div class="text-color center ">{{slidData.price}}</div> 
-    
 </template>
 <script lang="ts">
 
-import { defineComponent,ref } from 'vue'
+import { defineComponent,ref, watch } from 'vue'
  export default defineComponent({
     
     props:{
     slidData:{type:Object, required:true}  
     },
+  
     setup( props) {
-    let imgeHover=ref(props.slidData.firstImg)
-   
-        return{imgeHover};
         
+    let imgeHover=ref(props.slidData.firstImg)
+  watch(()=>props.slidData,()=>{
+    imgeHover.value=props.slidData.firstImg
+  })
 
+        return{imgeHover  };
+ 
     },
 })
 </script>

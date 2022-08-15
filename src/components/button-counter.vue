@@ -27,14 +27,16 @@ const decreaseCounter =()=>{
 
    <h6>{{ QUANTITY }}</h6>
 <div class="counter">
- <button @click="decreaseCounter">-</button>
-<span class="counter">{{counter}}</span>
+    
+ <button @click="decreaseCounter" >-</button>
+<span  >{{counter}}</span>
 <button @click="increaseCounter">+</button>
 </div > 
 
 </template>
 
 <style scoped>
+ 
 h6{
    position: relative;
     margin-top:20px ;
@@ -44,13 +46,17 @@ h6{
 }
 
 .counter button{
+    
+     margin-top: 35px;
     background: black;
     color:lightgray; 
-    border: 1px lightgray solid;
+    
+    padding: 10px;
 }
 .counter span{
     text-align: center;
     margin: 5px;
+    padding: 15px;
     
 }
 </style>

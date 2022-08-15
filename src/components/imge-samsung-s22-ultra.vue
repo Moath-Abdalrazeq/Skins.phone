@@ -1,7 +1,7 @@
 <template>
   <div v-for="(slid, index) in tempSlide" :key="index">
     <router-link to="/skinsPage">
-      <button @click="getId(slid.id, slid.type)">
+      <button @click="getId(slid.id, slid.type)" class="button-base-slide">
         <base-slide :slidData="slid"></base-slide>
       </button>
     </router-link>
@@ -56,4 +56,8 @@ export default defineComponent({
   },
 });
 </script>
-<style scoped></style>
+<style scoped>
+.button-base-slide{
+  background: none;
+}
+</style>

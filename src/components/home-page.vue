@@ -8,23 +8,26 @@ import UserHero from './user-hero.vue';
 import HomepageVideo from './homepage-video.vue';
 import SkinsForLaptopsTablets from './skins-for-laptops-tablets.vue';
 import HelpAndFaq from './help-and-faq.vue';
- import skinsImages from './skins-images.vue'
 import CartHero from './cart-hero.vue';
 import searchBar from './search-bar.vue'
 import BaseSlider from './base-slider.vue'
 import ImgeSamsungS22Ultra from './imge-samsung-s22-ultra.vue';
+import headerImage from '../assets/img/skins-image.gif'
  export default defineComponent({
     name: "skinsPhone",
-      components: {SearchHero,  UserHero, SkinsForSmartphone, ExclusiveCollections, HomepageVideo, SkinsForLaptopsTablets, HelpAndFaq ,skinsImages, CartHero,searchBar ,BaseSlider, ImgeSamsungS22Ultra },
+      components: {SearchHero,  UserHero, SkinsForSmartphone, ExclusiveCollections, HomepageVideo, SkinsForLaptopsTablets, HelpAndFaq ,  CartHero,searchBar ,BaseSlider, ImgeSamsungS22Ultra   },
     setup() {
-        return {skinsPhone};
+        return {skinsPhone ,headerImage};
     },
 })
 </script>
 <template  >
- <!--video-->
-  <homepage-video></homepage-video>
+ <!--image header -->
+  
+   <img :src="headerImage" class="imge-header" />  
+    
    <section>
+      <div class="header-fixsed">
 <div class="width-full">
  <!-- logo -->
 <div class="main"> 
@@ -55,7 +58,10 @@ import ImgeSamsungS22Ultra from './imge-samsung-s22-ultra.vue';
     </div>  
 </div>
 </div>
+</div>
    </section>
+     
+   
 <!-- Skins images and description for  GALAXY S22 ULTRA  -->
 <div class="header">
 <div>
@@ -106,11 +112,9 @@ top: 5px;
  }
  .menu-links {
     display:flex;
-    justify-content: space-between ;
+    justify-content: space-around ;
     color:white;
     height: fit-content;
-    
-     
  }
   .main-links {
      width: 400px;
@@ -135,11 +139,25 @@ text-decoration: none;
 }
 .slide-display{
   display: flex;
-  justify-content: center;
+  
   
 }
 .svg-width{
  height: 15px;
     width: 15px;
 }
+
+.imge-header {   
+     width: 100%;
+    z-index: -1;
+     
+  }
+
+  .header-fixsed{
+  background-color:black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  }
+ 
 </style>

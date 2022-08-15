@@ -1,9 +1,9 @@
 /*samsung galaxy s22 ultre*/
 import imgeOne from "../assets/img/samsung-s22-ultra/Samsung Galaxy S22 ULTRA BRUSHED TITANIUM Metallic Skin.webp";
 import imgeTwo from "../assets/img/samsung-s22-ultra/Samsung Galaxy S22 ULTRA SIGNATURE Abstract Velvet Skin.webp";
-import imgeThree from "../assets/img/samsung-s22-ultra/Samsung Galaxy S22 ULTRA SIGNATURE Blue HEXAGON Skin.webp";
+import imgeThree from "../assets/img/samsung-s22-ultra/Samsung Galaxy S22 ULTRA SIGNATURE Blue HEXAGON Skin.jpg";
 import imgeFour from "../assets/img/samsung-s22-ultra/Samsung Galaxy S22 ULTRA SIGNATURE Camouflage Dark Slate Skin.webp";
-import imgeFive from "../assets/img/samsung-s22-ultra/Samsung Galaxy S22 ULTRA SIGNATURE THE CORE Skin.webp";
+import imgeFive from "../assets/img/samsung-s22-ultra/Samsung Galaxy S22 ULTRA SIGNATURE THE CORE Skin.jpg";
 import imgeHoverFive from "../assets/img/samsung-s22-ultra/imge-hover-five.webp";
 import imgeHoverThree from "../assets/img/samsung-s22-ultra/imge-hover-three.webp";
 import imgeHoverFour from "../assets/img/samsung-s22-ultra/imge-hover-four.webp";
@@ -58,6 +58,8 @@ let samsung = [
   },
 ];
 
+
+ 
 // iphone 13 pro max ........................................................................................................................
 import imgOne from "../assets/img/iphone/imge-one.webp";
 import imgTwo from "../assets/img/iphone/imge-two.webp";

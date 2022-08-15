@@ -6,7 +6,7 @@
   </div>
   <div v-for="(slid, index) in tempSlide" :key="index">
     <router-link to="/skinsPage">
-      <button @click="getId(slid.id, slid.type)">
+      <button @click="getId(slid.id, slid.type)" class="button-base-slide">
         <base-slide :slidData="slid"></base-slide>
       </button>
     </router-link>
@@ -98,10 +98,16 @@ export default defineComponent({
   background-color: #fc4f00;
   width: 40px;
   height: 40px;
+   
 }
 
 .svg {
-  height: 15px;
-  width: 15px;
+  height: 30px;
+  width: 30px;
+    text-align: center;
+}
+
+.button-base-slide{
+background: none;
 }
 </style>
