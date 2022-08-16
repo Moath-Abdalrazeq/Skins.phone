@@ -1,11 +1,9 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import arrowHover from './arrow-hover.vue'
-
 export default defineComponent({
   components: { arrowHover },
-    setup() {
-        
+    setup() { 
     },
 })
 </script>
