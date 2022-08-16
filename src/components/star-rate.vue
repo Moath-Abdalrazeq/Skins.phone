@@ -18,7 +18,6 @@ export default defineComponent({
       {
     id:3,
     name:"StatHeroIcon"
-
    },
    {
        
