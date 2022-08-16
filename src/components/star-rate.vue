@@ -43,7 +43,7 @@ export default defineComponent({
 </script>
 
 <template>
-    <div v-for="Star in Stars" :key="Star.id" :class="{'star':!starHover,'ss':starHover,}">
+    <div v-for="Star in Stars" :key="Star.id" class=" w-4">
     <component :is="Star.name">
     
     </component>
@@ -54,15 +54,7 @@ export default defineComponent({
 
 
 <style scoped>
-.star{
-    width: 10px;
-}
-
-.ss{
-  width: 100px;
-}
-
-
+ 
 </style>
 
 

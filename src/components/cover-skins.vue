@@ -3,7 +3,7 @@ import { defineComponent, PropType, ref } from "vue";
 import ButtonCounter from "./button-counter.vue";
 import FaceIcon from "./face-icon.vue";
 import starRate from "./star-rate.vue";
- 
+
 type skinType = {
   firstImg: string;
   secImg: string;
@@ -33,35 +33,31 @@ export default defineComponent({
   },
 });
 </script>
-
 <template>
- 
-  <header class="head">
+  <header class=" text-gray-300 , text-xs , p-10 , ml-100 ">
     <h1>
       Home / collection / Samsung Galaxy S22 ULTRA Skins / Samsung Galaxy S22
       ULTRA SIGNATURA THR CORE Skin
     </h1>
   </header>
-  <div class="main">
+  <div class=" flex ,  text-gray-300 ">
     <div>
-      <img :src="imgeView " alt="phone" />
-      <div class="button-switch">  
-       <button @click="switchImge('first')" class="switch"> <img :src="skin.firstImg" class="imge-switch"> </button>
-       <button @click="switchImge('sec')"  class="switch"> <img :src="skin.secImg" class="imge-switch"> </button>
-
+      <img :src="imgeView " alt="phone"  class=" ml-56 "/>
+      <div class=" h-48 ml-16 ">  
+       <button @click="switchImge('first')" class="switch"> <img :src="skin.firstImg" class=" w-24"> </button>
+       <button @click="switchImge('sec')"  class="switch"> <img :src="skin.secImg" class="w-24"> </button>
       </div>
     </div>
-    <section class="txt">
-      <h2>{{ skin.desc }}</h2>
-      <span><star-rate></star-rate></span>
-      <h3>25₪</h3>
-      <hr />
+    <section class="  , ml-20 ">
+      <h2 class=" text-lg 	">{{ skin.desc }}</h2>
+      <span class=" flex , pt-6"><star-rate></star-rate></span>
+      <h3 class=" text-xl , mt-8 , pb-6 ">25₪</h3>
+      <hr class=" p-2">
       <h4>COLOUR :   </h4>
       <div>{{ skin.color }}</div>
-
-      <button-counter></button-counter>
-      <h5>ADD SCREEN/CAMERA PROTECTOR</h5>
-      <Select class="choose">
+      <button-counter ></button-counter>
+      <h5 class=" tracking-wide , text-lg , py-1 my-2">ADD SCREEN/CAMERA PROTECTOR</h5>
+      <Select class=" p-1 , text-sm , bg-black , border-2 ">
         <option value="NO">NO</option>
         <option value="SCREEN PROTECTOR">SCREEN PROTECTOR</option>
         <option value="Rear CAMERA Lens PROTECTOR">
@@ -72,104 +68,11 @@ export default defineComponent({
         </option>
       </Select>
       <div class="submet">
-        <button type="submit" class="submit-button"><span>Add to cart</span></button>
+        <button type="submit" class=" mt-9 mb-10"><span class=" bg-orange-600 px-40 py-2">Add to cart</span></button>
       </div>
       <face-icon></face-icon>
     </section>
   </div>
 </template>
-
 <style scoped>
-.head {
-  color: lightgray;
-  font-size: 5px;
-  padding: 40px;
-  margin-left: 100px;
-}
-.main {
-  display: flex;
-  color: lightgray;
-}
-img {
-  padding-top: 40px 0;
-  margin-left: 230px;
-
-}
-h2 {
-  font-size: 24px;
-}
-.txt {
-  margin-left: 120px;
-  display: block;
-}
-.txt span {
-  margin-top: 20px;
-  display: flex;
-}
-h3 {
-   margin-top: 20px;
-  font-size: 20px;
-}
-hr {
-    
-  border: 0;
-  height: 1px;
-  width: 400px;
-  margin: 0;
-  border-top: 1px solid;
-}
-.txt h4 {
-   margin-top: 20px;
-  font-size: 10px;
-}
-.select {
-   
-  color: lightgray;
-  background-color: black;
-  padding: 5px;
-  font-size: 8px;
-}
-h5 {
-  letter-spacing: 1px;
-  font-size: 15px;
-  word-spacing: 1px;
-  padding: 5px 0;
-  margin: 7px 0;
-}
-.choose {
-  border: 1px solid  lightgray;
-  color: white;
-  background-color: black;
-  font-size: 13px;
-  padding: 5px;
-}
-.submet button {
-  font-size: bold;
-  margin: 30px 0;
-  border: none;
-}
-.submet span {
-  background: orangered;
-  padding: 8px 150px;
-  border: none;
-}
-.button-switch{
-  height: 200px;
-display: flex;
-justify-content: left;
- 
-}
-.submit-button{
-    background: none;
- 
-}
-.switch{
-   
-  width: 100px;
-}
-.imge-switch{
-     
-  width: 100px;
- 
-}
 </style>
