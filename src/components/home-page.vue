@@ -55,6 +55,7 @@ import headerImage from '../assets/img/skins-image.gif'
 </div>
 </div>
 </div>
+
    </section>
 <!-- Skins images and description for  GALAXY S22 ULTRA  -->
 <div class=" text-blue-50 text-center p-10 mx-52 my-24 text-xl">
