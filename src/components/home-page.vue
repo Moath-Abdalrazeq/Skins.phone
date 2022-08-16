@@ -23,141 +23,59 @@ import headerImage from '../assets/img/skins-image.gif'
 </script>
 <template  >
  <!--image header -->
-  
-   <img :src="headerImage" class="imge-header" />  
-    
+   <img :src="headerImage" class="w-full" />  
    <section>
-      <div class="header-fixsed">
-<div class="width-full">
+      <div class="bg-black fixed top-0 w-full">
+<div class="w-full pt-5">
  <!-- logo -->
-<div class="main"> 
-      <div class="logo">
-   <img :src="skinsPhone" alt="" class="logo "/>
-   <span class="sp"> Skins.phone </span> 
+<div class="flex  justify-around"> 
+      <div class="flex w-12 h-12  rounded-full relative top-1.5  ">
+   <img :src="skinsPhone"/>
+   <span class="text-white mt-auto mb-auto font-Cursive m-2.5 p-1.5 text-lg"> Skins.phone </span> 
       </div>
 <!-- menu -->
 <div>
-<div class="menu-links width-full main-links">
-   <nav class=" ">
+<div class=" flex  justify-around text-white h-10 w-full  text-xl mr-20" > 
  <router-link to="/">Home</router-link>
-   </nav>
  <exclusive-collections></exclusive-collections>
  <skins-for-smartphone></skins-for-smartphone>
 </div>
-<div class="menu-links width-full main-links">
+<div class=" flex    justify-around text-white h-10 w-full  text-xl  mr-20">
    <skins-for-laptops-tablets></skins-for-laptops-tablets>
-   <a class=" ">EZY Cases</a>
+   <a >EZY Cases</a>
    <help-and-faq></help-and-faq>
 </div>
 </div>
 <!-- logo search , user and cart  -->
-    <div class="menu-links" >
-    <div> <search-bar></search-bar> </div>
-  <div>  <user-hero class="svg-width" ></user-hero>  </div>
-     <div> <cart-hero class="svg-width"></cart-hero> </div>
+    <div class="flex justify-around text-white h-4 " >
+     <search-bar class=" mr-2 " ></search-bar>  
+     <user-hero class="mr-2 " ></user-hero>  
+       <cart-hero  ></cart-hero>  
     </div>  
 </div>
 </div>
 </div>
    </section>
-     
-   
 <!-- Skins images and description for  GALAXY S22 ULTRA  -->
-<div class="header">
+<div class=" text-blue-50 text-center p-10 mx-52 my-24 text-xl">
 <div>
     <span> Introducing GALAXY S22 ULTRA</span>
-    <a >View all</a>
+    <a class="flex justify-end ">View all</a>
    </div>   
-   <div class="slide-display">
+   <div class="flex">
   <imge-samsung-s-22-ultra></imge-samsung-s-22-ultra>
    </div>
   </div>
  <!-- Skins images and description for  IPHONE 13 PRO  -->
-  <div class="header">
+  <div class="  text-blue-50 text-center p-10 mx-52 my-24 text-xl ">
    <div>
     <span>  iPhone 13 Pro MAX Skins & iPhone 13 PRO Skins</span>
-    <a >View all</a>
+    <a class="flex justify-end ">View all</a>
     </div>
-    <div class="slide-display">
+    <div class="flex  ">
   <base-slider></base-slider>
   </div>
- 
   </div>
-   
 </template>
 <style scoped>
-.logo {
-   display: flex; 
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-position: relative;
-top: 5px;
- }
- .sp{
-    color: white; 
-    margin-top: auto;
-    margin-bottom: auto;
-     font-family:Cursive  ;
-     margin: 10px;
-     padding: 5px; 
- }
-.main {
-     display: flex;
-  justify-content: space-around ;
-}
- .width-full {
-    width: 100%; 
-    padding-top: 20px; 
- }
- .menu-links {
-    display:flex;
-    justify-content: space-around ;
-    color:white;
-    height: fit-content;
- }
-  .main-links {
-     width: 400px;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  }
-  nav a{
-color: white;
-text-decoration: none;
-  }
-  .header{
-   color: darkgray; 
-    text-align: center;
-    padding:   40px;
-    margin: 200px 100px;
-    font-size: 25px;
-}
-.header a{
-  display: flex;
-   justify-content: flex-end;
-}
-.slide-display{
-  display: flex;
-  
-  
-}
-.svg-width{
- height: 15px;
-    width: 15px;
-}
-
-.imge-header {   
-     width: 100%;
-    z-index: -1;
-     
-  }
-
-  .header-fixsed{
-  background-color:black;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  }
- 
 </style>

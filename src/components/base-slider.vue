@@ -1,30 +1,28 @@
 <template>
-  <div>
-    <button @click="prev" class="button">
-      <previous-heroicon class="svg"></previous-heroicon>
+  <div class="my-28">
+    <button @click="prev" class="cursor-pointer rounded-3xl bg-orange-600 w-10 h-10    ">
+      <previous-heroicon ></previous-heroicon>
     </button>
   </div>
   <div v-for="(slid, index) in tempSlide" :key="index">
     <router-link to="/skinsPage">
-      <button @click="getId(slid.id, slid.type)" class="button-base-slide">
+      <button @click="getId(slid.id, slid.type)"  >
         <base-slide :slidData="slid"></base-slide>
       </button>
     </router-link>
   </div>
-  <div>
-    <button @click="next" class="button">
-      <next-heroicon class="svg"></next-heroicon>
+  <div class="my-24">
+    <button @click="next" class="cursor-pointer rounded-3xl bg-orange-600 w-10 h-10 ">
+      <next-heroicon  ></next-heroicon>
     </button>
   </div>
 </template>
 <script lang="ts">
 import { getIphoneData, setSkin } from "../services/base-skins.service";
-
 import { defineComponent, onMounted, ref } from "vue";
 import previousHeroicon from "./previous-heroicon.vue";
 import baseSlide from "./base-slide.vue";
 import NextHeroicon from "./next-heroicon.vue";
-
 type iphoneDataType = {
   firstImg: string;
   secImg: string;
@@ -34,7 +32,6 @@ type iphoneDataType = {
   color: string;
   type: string;
 }[];
-
 export default defineComponent({
   components: { baseSlide, previousHeroicon, NextHeroicon },
   setup() {
@@ -85,29 +82,4 @@ export default defineComponent({
   },
 });
 </script>
-<style scoped>
-.text-color {
-  color: white;
-}
-
-.button {
-  margin: 100px 0px;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  background-color: #fc4f00;
-  width: 40px;
-  height: 40px;
-   
-}
-
-.svg {
-  height: 30px;
-  width: 30px;
-    text-align: center;
-}
-
-.button-base-slide{
-background: none;
-}
-</style>
+<style scoped></style>

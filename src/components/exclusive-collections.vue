@@ -4,55 +4,20 @@ import arrowHover from './arrow-hover.vue'
 
 export default defineComponent({
   components: { arrowHover },
-    setup() {
-        
-    },
+    setup() {},
 })
 </script>
 <template>
-    <div class="dropdown">
-   <button class="dropbtn  ">  <a class="    "> Exclusive Collections </a>  <arrow-hover></arrow-hover> </button>
-   <div class="dropdown-content">
-    <a href="#">CLEARANCE</a>
-    <a href="#">3D CHARCOAL</a>
-    <a href="#">3D HONEYCOMB</a>
-    <a href="#">3D FORGED</a>
-    <a href="#">TEAL</a>
-    <a href="#">SILVERY Edition</a> 
+    <div class=" relative inline-block hover:block bg-black  z-20  ">
+   <button class="peer    hover: text-white hover:underline ">  <a class=""> Exclusive Collections </a>  <arrow-hover></arrow-hover> </button>
+   <div class="hidden peer-hover:flex hover:flex flex-col bg-black text-sm     text-white">
+    <a href="#" class="px-5 py-3 hover:bg-slate-500  ">CLEARANCE</a>
+    <a href="#" class="px-5 py-3 hover:bg-slate-500">3D CHARCOAL</a>
+    <a href="#" class="px-5 py-3 hover:bg-slate-500 ">3D HONEYCOMB</a>
+    <a href="#" class="px-5 py-3 hover:bg-slate-500 ">3D FORGED</a>
+    <a href="#" class="px-5 py-3 hover:bg-slate-500 ">TEAL</a>
+    <a href="#" class="px-5 py-3 hover:bg-slate-500 ">SILVERY Edition</a> 
   </div>
   </div>  
 </template>
-<style scoped>
-  .dropdown {
-    
-  position: relative;
-  display: inline-block;
-}
-.dropbtn {
-  background-color: inherit;
-  color:white;
-  font-size: 12px;
-  border: none;
-  outline: none;  
-}
-.dropdown-content {
-  display: none;
-  z-index: 5;
-  position: absolute;
-  background-color: black;
-    font-size: 12px;
-    min-width: 100%;
-}
-.dropdown-content a {
-  color: white;
-  padding:5px;
-  text-decoration: none;
-  display: block;
-}
-.dropdown-content a:hover {background-color:black; font-family: Monospace; }
-
-.dropdown:hover .dropdown-content {display: block;  }
-
-.dropdown:hover .dropbtn {background-color: black; text-decoration: underline;}
- 
-</style>
+<style scoped></style>

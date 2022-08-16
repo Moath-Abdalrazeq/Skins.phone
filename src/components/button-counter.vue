@@ -14,49 +14,17 @@ const decreaseCounter =()=>{
 
     }
 }
-
-
-
-        return{counter,increaseCounter,decreaseCounter,QUANTITY};
-
-        
+        return{counter,increaseCounter,decreaseCounter,QUANTITY}; 
     },
 })
 </script>
 <template>
-
-   <h6>{{ QUANTITY }}</h6>
+   <h6 class=" relative mt-5 text-white">{{ QUANTITY }}</h6>
 <div class="counter">
-    
- <button @click="decreaseCounter" >-</button>
-<span  >{{counter}}</span>
-<button @click="increaseCounter">+</button>
+ <button @click="decreaseCounter" class="p-1" >-</button>
+<span class=" m-1 p-4" >{{counter}}</span>
+<button @click="increaseCounter" class="p-1">+</button>
 </div > 
-
 </template>
-
 <style scoped>
- 
-h6{
-   position: relative;
-    margin-top:20px ;
-       height: 0;
-
-
-}
-
-.counter button{
-    
-     margin-top: 35px;
-    background: black;
-    color:lightgray; 
-    
-    padding: 10px;
-}
-.counter span{
-    text-align: center;
-    margin: 5px;
-    padding: 15px;
-    
-}
 </style>

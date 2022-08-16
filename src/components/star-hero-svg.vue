@@ -15,6 +15,4 @@ export default defineComponent({
 </svg></div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

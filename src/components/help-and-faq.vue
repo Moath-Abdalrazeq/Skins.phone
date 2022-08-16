@@ -10,46 +10,14 @@ export default defineComponent({
 })
 </script>
 <template>
-    <div class="dropdown">
-   <button class="dropbtn  ">  <a class="    "> Help & FAQ </a>  <arrow-hover></arrow-hover> </button>
-   <div class="dropdown-content">
-    <a href="#">FAQ - Frequntly Asked Questions</a>
+    <div class=" relative inline-block hover:block bg-black  z-20 ">
+   <button class="peer  hover: text-white    hover:underline ">  <a class=""> Help & FAQ </a>  <arrow-hover></arrow-hover> </button>
+   <div class="hidden peer-hover:flex  hover:flex   bg-black text-sm  text-white fixed">
+    <a href="#" class="px-5 py-3 hover:bg-slate-500">FAQ - Frequntly Asked Questions</a>
   </div>
   </div>  
 </template>
 <style scoped>
-  .dropdown {
-    
-  position: relative;
-  display: inline-block;
-   
-}
-.dropbtn {
-  background-color: inherit;
-  color:white;
-  font-size: 12px;
-  border: none;
-  outline: none;  
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: black;
-    font-size: 12px;
-    min-width: 250%;
-     
-       
-}
-.dropdown-content a {
-  color: white;
-  padding:5px;
-  text-decoration: none;
-  display: block;
-}
-.dropdown-content a:hover {background-color:black; font-family: Monospace; }
-
-.dropdown:hover .dropdown-content {display: block;  }
-
-.dropdown:hover .dropbtn {background-color: black; text-decoration: underline;}
+  
  
 </style>

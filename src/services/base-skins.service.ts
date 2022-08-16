@@ -85,12 +85,12 @@ import imgeHoverSix from "../assets/img/iphone/iphone-hover/imge-hover-sex.webp"
 import imgeHoverSeven from "../assets/img/iphone/iphone-hover/imge-hover-seven.webp";
 import imgeHoverEight from "../assets/img/iphone/iphone-hover/imge-hover-eight.webp";
 import imgeHoverNine from "../assets/img/iphone/iphone-hover/imge-hover-nine.webp";
-import imgeHoverTen from "../assets/img/iphone/iphone-hover/imge-hover-ten.webp";
-import imgeHoverEleven from "../assets/img/iphone/iphone-hover/imge-hover-eleven.webp";
+ import imgeHoverEleven from "../assets/img/iphone/iphone-hover/imge-hover-eleven.webp";
 import imgeHoverTwelve from "../assets/img/iphone/iphone-hover/imge-hover-twelve.webp";
 import imgeHoverThirteen from "../assets/img/iphone/iphone-hover/imge-hover-thirteen.webp";
 import imgeHoverFourteen from "../assets/img/iphone/iphone-hover/imge-hover-fourteen.webp";
 import imgeHoverFifteen from "../assets/img/iphone/iphone-hover/imge-hover-fifteen.webp";
+import imgeHover from '../assets/img/samsung-s22-ultra/imgeHover.jpg'
 
 let Iphone = [
   {
@@ -140,7 +140,7 @@ let Iphone = [
   },
   {
     firstImg: imgeSix,
-    secImg: imgeHoverSix,
+    secImg: imgeHoverEight,
     desc: "iPhone 13 Pro MAX SATIN BLUE Metallic Skin",
     price: "25₪",
     id: 6,
@@ -158,7 +158,7 @@ let Iphone = [
   },
   {
     firstImg: imgeEight,
-    secImg: imgeHoverEight,
+    secImg: imgeHoverNine,
     desc: "iPhone 13 Pro MAX Military Green Metallic Skin",
     price: "25₪",
     id: 8,
@@ -167,7 +167,7 @@ let Iphone = [
   },
   {
     firstImg: imgeNine,
-    secImg: imgeHoverNine,
+    secImg:imgeHover  ,
     desc: "iPhone 13 Pro MAX SIGNATURE Gold in the Veins Skin",
     price: "25₪",
     id: 9,
@@ -176,7 +176,7 @@ let Iphone = [
   },
   {
     firstImg: imgeTen,
-    secImg: imgeHoverTen,
+    secImg: imgeHoverNine,
     desc: " iPhone 13 Pro MAX LUXURIA RIDERS Black LEATHER Textured Skin",
     price: "25₪",
     id: 10,
@@ -185,7 +185,7 @@ let Iphone = [
   },
   {
     firstImg: imgeEleven,
-    secImg: imgeHoverEleven,
+    secImg: imgeHoverThirteen,
     desc: "iPhone 13 Pro MAX SATIN BLUE Metallic Skin",
     price: "25₪",
     id: 11,
@@ -203,7 +203,7 @@ let Iphone = [
   },
   {
     firstImg: imgeThirteen,
-    secImg: imgeHoverThirteen,
+    secImg: imgeHoverFifteen,
     desc: "iPhone 13 Pro MAX Military Green Metallic Skin",
     price: "25₪",
     id: 13,
@@ -212,7 +212,7 @@ let Iphone = [
   },
   {
     firstImg: imgeFourteen,
-    secImg: imgeHoverFourteen,
+    secImg:imgeHoverFourteen,
     desc: "iPhone 13 Pro MAX SIGNATURE Gold in the Veins Skin",
     price: "25₪",
     id: 14,
@@ -221,7 +221,7 @@ let Iphone = [
   },
   {
     firstImg: imgeFifteen,
-    secImg: imgeHoverFifteen,
+    secImg: imgeHoverEleven,
     desc: " iPhone 13 Pro MAX LUXURIA RIDERS Black LEATHER Textured Skin",
     price: "25₪",
     id: 15,

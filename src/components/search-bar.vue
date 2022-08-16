@@ -1,9 +1,10 @@
 <template>
-  <div class="search-box">
-     <div v-if="searchButton"  class="input-position" >
-<input type="text" placeholder="search"  class="input-search" v-autofocus   > 
+  <div class=" relative h-fit ">
+     <div v-if="searchButton"  class=" absolute top-6" >
+<input type="text" placeholder="search..."  class="px-4 py-2   text-black w-fit" v-autofocus   > 
+
   </div>
- <searchHero @click="searchButton=!searchButton" class="btn-search" ></searchHero>
+ <searchHero @click="searchButton=!searchButton" class=" w-4 h-4 " ></searchHero>
   </div>
 </template>
 
@@ -28,32 +29,4 @@ export default defineComponent({
 })
 </script>
 
-<style scoped>
- 
-.input-search{
-  font-size: fit-content;
-  letter-spacing: 2px;
-   transition: all .5s ease-in-out;
- color: #000;
- font-weight: boldf;
- 
- 
-}
-.btn-search{
-  width: 15px;
-  height: 15px;
-  
-}
-.search-box{
-position: relative;
-height: fit-content;
-}
-.input-position{
-  position: absolute;
-  top:20px;
-
-  
-
-}
- 
-</style>
+<style scoped></style>
