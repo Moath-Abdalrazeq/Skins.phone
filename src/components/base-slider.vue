@@ -1,7 +1,8 @@
 <template>
+<div class="flex     justify-around  w-full ">
   <div class="my-28">
-    <button @click="prev" class="cursor-pointer rounded-3xl bg-orange-600 w-10 h-10    ">
-      <previous-heroicon ></previous-heroicon>
+    <button @click="prev" class="cursor-pointer rounded-3xl bg-orange-600 w-10 h-10  ">
+      <previous-heroicon class="h-5 ml-2"></previous-heroicon>
     </button>
   </div>
   <div v-for="(slid, index) in tempSlide" :key="index">
@@ -12,10 +13,11 @@
     </router-link>
   </div>
   <div class="my-24">
-    <button @click="next" class="cursor-pointer rounded-3xl bg-orange-600 w-10 h-10 ">
-      <next-heroicon  ></next-heroicon>
+    <button @click="next" class="cursor-pointer rounded-3xl bg-orange-600 w-10 h-10  ">
+      <next-heroicon class="h-5 ml-2"  ></next-heroicon>
     </button>
   </div>
+</div>
 </template>
 <script lang="ts">
 import { getIphoneData, setSkin } from "../services/base-skins.service";
@@ -82,4 +84,4 @@ export default defineComponent({
   },
 });
 </script>
-<style scoped></style>
+ 

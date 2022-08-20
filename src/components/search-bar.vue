@@ -1,10 +1,10 @@
 <template>
   <div class=" relative h-fit ">
-     <div v-if="searchButton"  class=" absolute top-6" >
-<input type="text" placeholder="search..."  class="px-4 py-2   text-black w-fit" v-autofocus   > 
+     <div v-if="searchButton"  class=" absolute top-7 " >
+<input type="text" placeholder="search..."  class="px-4 py-2   text-black w-fit " v-autofocus   > 
 
   </div>
- <searchHero @click="searchButton=!searchButton" class=" w-4 h-4 " ></searchHero>
+ <searchHero @click="searchButton=!searchButton" class=" h-6 lg:w-6 lg:h-6 " ></searchHero>
   </div>
 </template>
 
@@ -28,5 +28,4 @@ export default defineComponent({
 
 })
 </script>
-
-<style scoped></style>
+ 

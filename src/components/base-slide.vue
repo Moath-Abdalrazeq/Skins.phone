@@ -1,8 +1,12 @@
 <template>
+<div class=" lg:w-32 lg:text-sm lg:p-1 w-60 ">
+  <div class=" lg:-ml-10 ">
 <img :src="imgeHover"  
-@mouseover="imgeHover=slidData.secImg" @mouseleave="imgeHover=slidData.firstImg" class=" h-64  "/> 
-<div class=" text-blue-50  ">{{slidData.desc}}</div> 
-<div class="  text-blue-50      ">{{slidData.price}}</div> 
+@mouseover="imgeHover=slidData.secImg" @mouseleave="imgeHover=slidData.firstImg" class="object-contain   lg:h-44 lg:object-cover "/> 
+  </div>
+<div class=" text-gray-400 lg:-ml-12 lg:text-sm	text-base mr-1">{{slidData.desc}}</div> 
+<div class="  text-gray-400   lg:-ml-12 lg:text-sm    ">{{slidData.price}}</div> 
+</div>
 </template>
 <script lang="ts">
 import { defineComponent,ref, watch } from 'vue'
@@ -24,5 +28,4 @@ import { defineComponent,ref, watch } from 'vue'
     },
 })
 </script>
-<style scoped>
-</style>
+ 

@@ -74,5 +74,4 @@ export default defineComponent({
     </section>
   </div>
 </template>
-<style scoped>
-</style>
+ 

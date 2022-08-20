@@ -9,12 +9,11 @@ export default defineComponent({
 </script>
 <template>
     <div class="relative inline-block hover:block bg-black  z-10">
-   <button class="peer    hover: text-white hover:underline ">  <a class="    "> Skins for laptops & tablets </a>  <arrow-hover></arrow-hover> </button>
+   <button class="peer    hover: text-gray-400hover:translate-x-2 hover:underline  ">  <a> Skins for laptops & tablets </a>  <arrow-hover></arrow-hover> </button>
    <div class="hidden peer-hover:flex hover:flex flex-col bg-black text-sm     text-white">
-    <a href="#" class="px-5 py-3 hover:bg-slate-500  ">MacBook Skins</a>
-    <a href="#" class="px-5 py-3 hover:bg-slate-500  ">iPad Skins </a>
+    <a href="#" class="px-5 py-3 hover:translate-x-2  ">MacBook Skins</a>
+    <a href="#" class="px-5 py-3 hover:translate-x-2 ">iPad Skins </a>
   </div>
   </div>  
 </template>
-<style scoped>
-</style>
+ 

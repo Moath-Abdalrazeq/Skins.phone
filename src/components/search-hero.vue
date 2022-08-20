@@ -3,13 +3,4 @@
   <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
 </svg>  
 </template>
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-    setup() {
-        
-    },
-})
-</script>
-<style scoped> </style>
+ 

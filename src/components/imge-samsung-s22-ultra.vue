@@ -1,4 +1,5 @@
 <template>
+<div class=" flex    lg:justify-around  w-full ">
   <div v-for="(slid, index) in tempSlide" :key="index">
     <router-link to="/skinsPage">
       <button @click="getId(slid.id, slid.type)" class=" bg-none">
@@ -6,6 +7,7 @@
       </button>
     </router-link>
   </div>
+</div>
 </template>
 
 <script lang="ts">
@@ -50,4 +52,4 @@ export default defineComponent({
   },
 });
 </script>
-<style scoped></style>
+ 

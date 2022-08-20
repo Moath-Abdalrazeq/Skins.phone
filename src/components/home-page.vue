@@ -1,81 +1,84 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
-import skinsPhone from "../assets/SkinsPhone.jpg"
+import skinsPhone from "../assets/img/header.png"
 import ExclusiveCollections from './exclusive-collections.vue';
 import SearchHero from './search-hero.vue';
 import SkinsForSmartphone from './skins-for-smartphone.vue';
 import UserHero from './user-hero.vue';
-import HomepageVideo from './homepage-video.vue';
 import SkinsForLaptopsTablets from './skins-for-laptops-tablets.vue';
 import HelpAndFaq from './help-and-faq.vue';
 import CartHero from './cart-hero.vue';
 import searchBar from './search-bar.vue'
 import BaseSlider from './base-slider.vue'
 import ImgeSamsungS22Ultra from './imge-samsung-s22-ultra.vue';
-import headerImage from '../assets/img/skins-image.gif'
+import LoginForm from './login-form.vue';
  export default defineComponent({
     name: "skinsPhone",
-      components: {SearchHero,  UserHero, SkinsForSmartphone, ExclusiveCollections, HomepageVideo, SkinsForLaptopsTablets, HelpAndFaq ,  CartHero,searchBar ,BaseSlider, ImgeSamsungS22Ultra   },
+      components: {SearchHero,  UserHero, SkinsForSmartphone, ExclusiveCollections, SkinsForLaptopsTablets, HelpAndFaq ,  CartHero,searchBar ,BaseSlider, ImgeSamsungS22Ultra, LoginForm   },
     setup() {
-        return {skinsPhone ,headerImage};
+        return {skinsPhone  };
     },
 })
 </script>
 <template  >
- <!--image header -->
-   <img :src="headerImage" class="w-full" />  
+ <!--image header --> 
+ <div class=" h-96    w-full bg-fixed" style="background-image: url('https://cdn.fbsbx.com/v/t59.2708-21/298649262_622437152533438_8974594355022654984_n.gif?_nc_cat=104&ccb=1-7&_nc_sid=041f46&_nc_ohc=4HK3KE1lDygAX8R4ijr&tn=2CL7lO9P0JVGnW4w&_nc_ht=cdn.fbsbx.com&oh=03_AVJ8Gpc6XJEwe1HeVnu9Qir72c3Lu74jBB7pmgYY3cT6yA&oe=62FD7D96'); ">
+ </div>
    <section>
-      <div class="bg-black fixed top-0 w-full">
-<div class="w-full pt-5">
+      <div class="bg-black fixed  top-0  w-full   ">
+<div class=" w-full  pt-5">
  <!-- logo -->
-<div class="flex  justify-around"> 
-      <div class="flex w-12 h-12  rounded-full relative top-1.5  ">
-   <img :src="skinsPhone"/>
-   <span class="text-white mt-auto mb-auto font-Cursive m-2.5 p-1.5 text-lg"> Skins.phone </span> 
+<div class=" flex   justify-around lg:ml-4    "> 
+      <div class=" flex w-8 h-8 relative top-2  ">
+   <img :src="skinsPhone" class=" rounded-3xl" />
+   <span class="text-gray-400  ml-2 text-xl    lg:text-xl "> Skins.phone </span> 
       </div>
 <!-- menu -->
 <div>
-<div class=" flex  justify-around text-white h-10 w-full  text-xl mr-20" > 
- <router-link to="/">Home</router-link>
+<div class=" hidden justify-between mx-7  text-gray-400 lg:h-10  w-full lg:text-xl  lg:flex " > 
+ <router-link to="/" >Home</router-link>
  <exclusive-collections></exclusive-collections>
  <skins-for-smartphone></skins-for-smartphone>
 </div>
-<div class=" flex    justify-around text-white h-10 w-full  text-xl  mr-20">
+<div class=" hidden justify-between mx-7 lg:flex text-gray-400 lg:h-10 lg:w-full  text-xl    ">
    <skins-for-laptops-tablets></skins-for-laptops-tablets>
-   <a >EZY Cases</a>
+   <a>EZY Cases</a>
    <help-and-faq></help-and-faq>
 </div>
 </div>
 <!-- logo search , user and cart  -->
-    <div class="flex justify-around text-white h-4 " >
-     <search-bar class=" mr-2 " ></search-bar>  
-     <user-hero class="mr-2 " ></user-hero>  
-       <cart-hero  ></cart-hero>  
+    <div class=" flex  justify-around text-gray-400   lg:mt-5  h-6   " >
+     <search-bar></search-bar> 
+        <router-link to="/loginPage"
+         class=" mx-2 lg:inline-block  hover:text-white">
+         <user-hero class="h-6  "></user-hero>
+         </router-link>
+       <cart-hero ></cart-hero>  
     </div>  
 </div>
 </div>
 </div>
    </section>
 <!-- Skins images and description for  GALAXY S22 ULTRA  -->
-<div class=" text-blue-50 text-center p-10 mx-52 my-24 text-xl">
+<div class=" text-gray-400 text-center p-10   text-xl   mt-10  ">
 <div>
     <span> Introducing GALAXY S22 ULTRA</span>
-    <a class="flex justify-end ">View all</a>
+    <a class="hidden justify-end lg:flex ">View all</a>
    </div>   
-   <div class="flex">
+   <div class="flex  justify-between overflow-x-auto ">
   <imge-samsung-s-22-ultra></imge-samsung-s-22-ultra>
    </div>
   </div>
  <!-- Skins images and description for  IPHONE 13 PRO  -->
-  <div class="  text-blue-50 text-center p-10 mx-52 my-24 text-xl ">
+  <div class="  text-gray-400 p-10 lg:text-xl text-center mt-10  ">
    <div>
     <span>  iPhone 13 Pro MAX Skins & iPhone 13 PRO Skins</span>
-    <a class="flex justify-end ">View all</a>
+    <a class="lg:flex justify-end hidden">View all</a>
     </div>
-    <div class="flex  ">
+    <div class="flex lg:flex lg:justify-between  ">
   <base-slider></base-slider>
   </div>
   </div>
+
 </template>
-<style scoped>
-</style>
+ 

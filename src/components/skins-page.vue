@@ -16,5 +16,3 @@ export default defineComponent({
 <template>
   <cover-skins v-if="skin" :skin="skin"></cover-skins>
 </template>
-
-<style scoped></style>
