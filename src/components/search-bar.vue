@@ -4,8 +4,9 @@
 <input type="text" placeholder="search..."  class="px-4 py-2   text-black w-fit " v-autofocus   > 
 
   </div>
- <searchHero @click="searchButton=!searchButton" class=" h-6 lg:w-6 lg:h-6 " ></searchHero>
+  
   </div>
+  <searchHero @click="searchButton=!searchButton" class=" h-6 lg:w-6  " ></searchHero>
 </template>
 
 <script lang="ts">

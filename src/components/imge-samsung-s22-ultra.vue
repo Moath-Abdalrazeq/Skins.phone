@@ -1,5 +1,5 @@
 <template>
-<div class=" flex    lg:justify-around  w-full ">
+<div class=" flex   lg:justify-evenly  w-full ">
   <div v-for="(slid, index) in tempSlide" :key="index">
     <router-link to="/skinsPage">
       <button @click="getId(slid.id, slid.type)" class=" bg-none">
@@ -9,7 +9,6 @@
   </div>
 </div>
 </template>
-
 <script lang="ts">
 import { getSamsungData, setSkin } from "../services/base-skins.service";
 import { defineComponent, onMounted, ref } from "vue";

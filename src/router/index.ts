@@ -3,6 +3,7 @@ import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import homePage from '../components/home-page.vue';
  import skinsPage from '../components/skins-page.vue'
  import loginPage from '../components/login-form.vue'
+ import forgotPassword from '../components/forgot-password.vue'
   
 const routes:Array<RouteRecordRaw> =[
 	{
@@ -20,6 +21,12 @@ const routes:Array<RouteRecordRaw> =[
 		path: '/loginPage',
 		name: 'loginPage',
 		component: loginPage,
+		 
+	},
+	{
+		path: '/forgotPassword',
+		name: 'forgotPassword',
+		component: forgotPassword,
 		 
 	},
  

@@ -1,7 +1,7 @@
 <template>
-<div class="flex     justify-around  w-full ">
-  <div class="my-28">
-    <button @click="prev" class="cursor-pointer rounded-3xl bg-orange-600 w-10 h-10  ">
+<div class="flex   lg:justify-evenly  w-full   ">
+  <div class="my-auto ">
+    <button @click="prev" v-if="currentSlide!==5"   class="cursor-pointer rounded-3xl bg-orange-600 w-10 h-10  ">
       <previous-heroicon class="h-5 ml-2"></previous-heroicon>
     </button>
   </div>
@@ -12,8 +12,8 @@
       </button>
     </router-link>
   </div>
-  <div class="my-24">
-    <button @click="next" class="cursor-pointer rounded-3xl bg-orange-600 w-10 h-10  ">
+  <div class="my-auto  ">
+    <button @click="next" v-if="currentSlide!==IphoneData.length"  class="cursor-pointer rounded-3xl bg-orange-600 w-10 h-10  ">
       <next-heroicon class="h-5 ml-2"  ></next-heroicon>
     </button>
   </div>
@@ -45,7 +45,6 @@ export default defineComponent({
     function getId(id: number, type: string) {
       setSkin(id, type);
     }
-
     function initSlids() {
       tempSlide.value = [];
       for (let i = tempIndex.value; i < IphoneData.value.length; i++) {
@@ -54,12 +53,13 @@ export default defineComponent({
         }
       }
     }
-    function prev() {
-      if (tempIndex.value > 0) {
+  
+      function prev() {
+      if (tempIndex.value >0) {
         currentSlide.value = currentSlide.value - 5;
         tempIndex.value = tempIndex.value - 5;
-        initSlids();
-      }
+        initSlids();  
+      } 
     }
     function next() {
       if (IphoneData.value.length - 1 >= currentSlide.value) {
@@ -80,7 +80,8 @@ export default defineComponent({
       tempSlide,
       initSlids,
       getId,
-    };
+       
+       };
   },
 });
 </script>
