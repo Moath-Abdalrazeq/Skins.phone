@@ -1,12 +1,11 @@
 <template>
-<div class=" lg:w-32 lg:text-sm lg:p-1 w-60 ">
-  <div class=" lg:-ml-10 ">
+<div class=" lg:w-56 lg:text-sm  w-60   ">
+  
 <img :src="imgeHover"  
-@mouseover="imgeHover=slidData.secImg" @mouseleave="imgeHover=slidData.firstImg" class="object-contain   lg:h-44 lg:object-cover "/> 
-  </div>
-<div class=" text-gray-400 lg:-ml-12 lg:text-sm	text-base mr-1">{{slidData.desc}}</div> 
-<div class="  text-gray-400   lg:-ml-12 lg:text-sm    ">{{slidData.price}}</div> 
-</div>
+@mouseover="imgeHover=slidData.secImg" @mouseleave="imgeHover=slidData.firstImg" class="object-contain  lg:h-56 lg:object-cover "/> 
+<div class=" text-gray-400   lg:text-lg	text-base   ">{{slidData.desc}}</div> 
+<div class="  text-gray-400     lg:text-sm    ">{{slidData.price}}</div> 
+ </div>
 </template>
 <script lang="ts">
 import { defineComponent,ref, watch } from 'vue'

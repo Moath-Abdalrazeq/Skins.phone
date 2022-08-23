@@ -1,6 +1,6 @@
 <template>
-  <div class=" relative h-fit ">
-     <div v-if="searchButton"  class=" absolute top-7 " >
+  <div class=" relative   ">
+     <div v-if="searchButton"  class=" absolute top-7 h-fit " >
 <input type="text" placeholder="search..."  class="px-4 py-2   text-black w-fit " v-autofocus   > 
 
   </div>

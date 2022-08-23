@@ -14,21 +14,24 @@ import ImgeSamsungS22Ultra from './imge-samsung-s22-ultra.vue';
 import LoginForm from './login-form.vue';
 import MenuHero from './menu-hero.vue';
 import closeHero from './close-hero.vue'
+ import headerImg from  '../assets/img/skins-image.gif'
  export default defineComponent({
     name: "skinsPhone",
-      components: {SearchHero,UserHero, closeHero,SkinsForSmartphone, ExclusiveCollections, SkinsForLaptopsTablets, HelpAndFaq ,  CartHero,searchBar ,BaseSlider, ImgeSamsungS22Ultra, LoginForm, MenuHero   },
+      components: {SearchHero,UserHero,closeHero,SkinsForSmartphone, ExclusiveCollections, SkinsForLaptopsTablets, HelpAndFaq ,  CartHero,searchBar ,BaseSlider, ImgeSamsungS22Ultra, LoginForm, MenuHero   },
    setup() {
      let showMenu = ref(false)
-        return {skinsPhone ,showMenu};
+        return {skinsPhone ,showMenu, headerImg};
     },
 })
 </script>
 <template  >
  <!--image header -------------------------------> 
- <div class=" h-96 lg:bg-cover w-full bg-fixed bg-no-repeat" style="background-image:url('https://cdn.fbsbx.com/v/t59.2708-21/298649262_622437152533438_8974594355022654984_n.gif?_nc_cat=104&ccb=1-7&_nc_sid=041f46&_nc_ohc=4HK3KE1lDygAX8R4ijr&tn=2CL7lO9P0JVGnW4w&_nc_ht=cdn.fbsbx.com&oh=03_AVJ8Gpc6XJEwe1HeVnu9Qir72c3Lu74jBB7pmgYY3cT6yA&oe=62FD7D96'); ">
+ <div class=" h-96 lg:bg-cover w-full bg-fixed bg-no-repeat" :style="{
+      'background-image': `url(${headerImg})` 
+    }" >
  </div>
    <section>
-      <div class="bg-black fixed  top-0  w-full ">
+      <div   class="bg-black fixed  top-0  w-full ">
 <div class=" w-full  pt-5">
  <!-- logo ------------------------------>
 <div class=" flex justify-between lg:justify-around "> 
@@ -72,7 +75,7 @@ import closeHero from './close-hero.vue'
 <div class=" text-gray-400 text-center p-10   text-xl   mt-10      ">
 <div>
     <span> Introducing GALAXY S22 ULTRA</span>
-    <a class="hidden justify-end lg:flex ">View all</a>
+    <router-link to="/homePage/viewS22Ultra" class="hidden justify-end lg:flex ">View all</router-link>
    </div>   
    <div class="overflow-x-auto  ">
   <imge-samsung-s-22-ultra></imge-samsung-s-22-ultra>
@@ -82,11 +85,11 @@ import closeHero from './close-hero.vue'
   <div class="  text-gray-400 p-10 lg:text-xl text-center mt-10  ">
    <div>
     <span>iPhone 13 Pro MAX Skins & iPhone 13 PRO Skins</span>
-    <a class="lg:flex justify-end hidden">View all</a>
+    <router-link to="/homePage/viewIphone13" class="lg:flex justify-end hidden">View all</router-link>
     </div>
-    <div class="overflow-x-auto">
-   <base-slider></base-slider> 
+    <div class=" ">
+    <base-slider></base-slider>  
   </div>
-  </div>
+  </div> 
 </template>
  

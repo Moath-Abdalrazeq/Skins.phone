@@ -1,7 +1,7 @@
 <template>
 <div class="flex   lg:justify-evenly  w-full   ">
   <div class="my-auto ">
-    <button @click="prev" v-if="currentSlide!==5"   class="cursor-pointer rounded-3xl bg-orange-600 w-10 h-10  ">
+    <button @click="prev" v-if="currentSlide!==5 "   class="cursor-pointer rounded-3xl bg-orange-600 w-10 h-10  ">
       <previous-heroicon class="h-5 ml-2"></previous-heroicon>
     </button>
   </div>
@@ -13,7 +13,7 @@
     </router-link>
   </div>
   <div class="my-auto  ">
-    <button @click="next" v-if="currentSlide!==IphoneData.length"  class="cursor-pointer rounded-3xl bg-orange-600 w-10 h-10  ">
+    <button @click="next" v-if="currentSlide!==IphoneData.length "  class="cursor-pointer rounded-3xl bg-orange-600 w-10 h-10  ">
       <next-heroicon class="h-5 ml-2"  ></next-heroicon>
     </button>
   </div>

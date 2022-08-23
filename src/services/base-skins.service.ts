@@ -9,7 +9,6 @@ import imgeHoverThree from "../assets/img/samsung-s22-ultra/imge-hover-three.web
 import imgeHoverFour from "../assets/img/samsung-s22-ultra/imge-hover-four.webp";
 import imgeHoverOne from "../assets/img/samsung-s22-ultra/imge-hover-one.webp";
 import imgeHoverTow from "../assets/img/samsung-s22-ultra/imge-hover-tow.webp";
-
 let samsung = [
   {
     firstImg: imgeOne,
@@ -56,6 +55,70 @@ let samsung = [
     color: "yellow",
     type: "samsung",
   },
+  {
+    firstImg: imgeFive,
+    secImg: imgeHoverFive,
+    desc: "Samsung Galaxy S22 ULTRA SIGNATURE THE CORE Skin",
+    price: "25₪",
+    id: 6,
+    color: "yellow",
+    type: "samsung",
+  },
+  {
+    firstImg: imgeFive,
+    secImg: imgeHoverFive,
+    desc: "Samsung Galaxy S22 ULTRA SIGNATURE THE CORE Skin",
+    price: "25₪",
+    id: 7,
+    color: "yellow",
+    type: "samsung",
+  },
+  {
+    firstImg: imgeFive,
+    secImg: imgeHoverFive,
+    desc: "Samsung Galaxy S22 ULTRA SIGNATURE THE CORE Skin",
+    price: "25₪",
+    id: 8,
+    color: "yellow",
+    type: "samsung",
+  },
+  {
+    firstImg: imgeFive,
+    secImg: imgeHoverFive,
+    desc: "Samsung Galaxy S22 ULTRA SIGNATURE THE CORE Skin",
+    price: "25₪",
+    id: 9,
+    color: "yellow",
+    type: "samsung",
+  },
+  {
+    firstImg: imgeFive,
+    secImg: imgeHoverFive,
+    desc: "Samsung Galaxy S22 ULTRA SIGNATURE THE CORE Skin",
+    price: "25₪",
+    id: 10,
+    color: "yellow",
+    type: "samsung",
+  },
+  {
+    firstImg: imgeFive,
+    secImg: imgeHoverFive,
+    desc: "Samsung Galaxy S22 ULTRA SIGNATURE THE CORE Skin",
+    price: "25₪",
+    id: 10,
+    color: "yellow",
+    type: "samsung",
+  },
+  {
+    firstImg: imgeFive,
+    secImg: imgeHoverFive,
+    desc: "Samsung Galaxy S22 ULTRA SIGNATURE THE CORE Skin",
+    price: "25₪",
+    id: 10,
+    color: "yellow",
+    type: "samsung",
+  },
+  
 ];
 
 
@@ -81,8 +144,7 @@ import imgeHoveTwo from "../assets/img/iphone/iphone-hover/imge-hover-tow.webp";
 import imgeHoveThree from "../assets/img/iphone/iphone-hover/imge-hover-three.webp";
 import imgeHoveFour from "../assets/img/iphone/iphone-hover/imge-hover-four.webp";
 import imgeHoveFive from "../assets/img/iphone/iphone-hover/imge-hover-five.webp";
-import imgeHoverSix from "../assets/img/iphone/iphone-hover/imge-hover-sex.webp";
-import imgeHoverSeven from "../assets/img/iphone/iphone-hover/imge-hover-seven.webp";
+ import imgeHoverSeven from "../assets/img/iphone/iphone-hover/imge-hover-seven.webp";
 import imgeHoverEight from "../assets/img/iphone/iphone-hover/imge-hover-eight.webp";
 import imgeHoverNine from "../assets/img/iphone/iphone-hover/imge-hover-nine.webp";
  import imgeHoverEleven from "../assets/img/iphone/iphone-hover/imge-hover-eleven.webp";
@@ -228,6 +290,16 @@ let Iphone = [
     color: "red",
     type: "iphone",
   },
+  {
+    firstImg: imgeFifteen,
+    secImg: imgeHoverEleven,
+    desc: " iPhone 13 Pro MAX LUXURIA RIDERS Black LEATHER Textured Skin",
+    price: "25₪",
+    id: 16,
+    color: "red",
+    type: "iphone",
+  },
+ 
 ];
 
 // let objectIdOne = -1;

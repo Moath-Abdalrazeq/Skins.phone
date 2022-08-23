@@ -25,6 +25,7 @@ type samsungDataType = {
 export default defineComponent({
   components: { baseSlide },
   setup() {
+    let currentSlide = ref(5);
     let tempIndex = ref(0);
     let tempSlide = ref<samsungDataType>([]);
     let samsungData = ref<samsungDataType>(getSamsungData());
@@ -35,7 +36,9 @@ export default defineComponent({
     function initSlids() {
       tempSlide.value = [];
       for (let i = tempIndex.value; i < samsungData.value.length; i++) {
-        tempSlide.value.push(samsungData.value[i]);
+         if (i < currentSlide.value) {
+   tempSlide.value.push(samsungData.value[i]);
+        }
       }
     }
     function init() {
@@ -43,6 +46,7 @@ export default defineComponent({
     }
     onMounted(init);
     return {
+      currentSlide,
       samsungData,
       tempSlide,
       initSlids,
@@ -51,4 +55,5 @@ export default defineComponent({
   },
 });
 </script>
+ 
  
