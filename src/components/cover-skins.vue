@@ -54,7 +54,7 @@ export default defineComponent({
 
     <section class=" ml-5 block , lg:ml-20 ">
       <h2 class=" flex-nowrap mr-16 text-sm lg:text-lg 	">{{ skin.desc }}</h2>
-      <span class=" flex , pt-6"><star-rate></star-rate></span>
+      <span class=" flex , pt-6"><star-rate ></star-rate></span>
       <h3 class=" mt-5  lg:text-xl , lg:mt-8 , lg:pb-6 ">25₪</h3>
       <hr class=" p-2 mt-4 w-80 lg:p-2">
       <div class=" flex text-sm">
