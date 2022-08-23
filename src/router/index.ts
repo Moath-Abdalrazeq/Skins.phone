@@ -6,6 +6,7 @@ import homePage from '../components/home-page.vue';
  import forgotPassword from '../components/forgot-password.vue'
   import viewS22Ultra from '../components/view-s22-ultra.vue'
   import viewIphone13 from '../components/iphone13-view.vue'
+  import createAccount from '../components/create-account.vue'
 const routes:Array<RouteRecordRaw> =[
 	{
 		path: '/',
@@ -40,6 +41,12 @@ const routes:Array<RouteRecordRaw> =[
 		path: '/homePage/viewIphone13',
 		name: 'viewIphone13',
 		component: viewIphone13,
+		 
+	},
+	{
+		path: '/createAccount',
+		name: 'createAccount',
+		component:createAccount,
 		 
 	},
  

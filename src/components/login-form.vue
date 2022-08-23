@@ -23,7 +23,7 @@
         <div class="flex items-center justify-between">
           <button class="bg-orange-600   text-black font-bold  w-full  py-2 mb-10" type="submit">Sign In</button>
         </div>
-         <a class="font-bold text-sm text-gray-300 hover:text-gray-600" href="#">Create account</a> 
+         <router-link to="/createAccount" class="font-bold text-sm text-gray-300 hover:text-gray-600" href="#">Create account</router-link> 
           <router-link to="/" class="text-gray-300 flex">Cancel </router-link>
       </form> 
     </div>
