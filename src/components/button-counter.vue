@@ -1,6 +1,5 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-import { Ref } from 'vue'
 export default defineComponent({
     setup() {
          const counter= ref(0),
@@ -26,5 +25,4 @@ const decreaseCounter =()=>{
 <button @click="increaseCounter" class="p-1">+</button>
 </div > 
 </template>
-<style scoped>
-</style>
+ 

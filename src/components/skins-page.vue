@@ -1,6 +1,7 @@
 <script lang="ts">
-import { defineComponent, onMounted, ref } from "vue";
+import { defineComponent } from "vue";
 import { getSkin } from "../services/base-skins.service";
+ 
 import coverSkins from "./cover-skins.vue";
 
 export default defineComponent({
@@ -8,13 +9,13 @@ export default defineComponent({
   components: { coverSkins },
   setup() {
     let skin = getSkin();
-    return { skin };
+    
+      return { skin   };
   },
 });
 </script>
 
 <template>
   <cover-skins v-if="skin" :skin="skin"></cover-skins>
+   
 </template>
-
-<style scoped></style>
