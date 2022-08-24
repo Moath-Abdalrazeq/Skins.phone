@@ -1,18 +1,18 @@
 <template>
-<div class="flex   lg:justify-evenly  w-full   ">
+<div class="flex    lg:justify-evenly  w-full   ">
   <div class="my-auto ">
     <button @click="prev" v-if="currentSlide!==5 "   class="cursor-pointer rounded-3xl bg-orange-600 w-10 h-10  ">
       <previous-heroicon class="h-5 ml-2"></previous-heroicon>
     </button>
-  </div>
-  <div v-for="(slid, index) in tempSlide" :key="index">
+  </div >
+  <div v-for="(slid, index) in tempSlide" :key="index" class="" >
     <router-link to="/skinsPage">
       <button @click="getId(slid.id, slid.type)"  >
         <base-slide :slidData="slid"></base-slide>
       </button>
     </router-link>
   </div>
-  <div class="my-auto  ">
+  <div class="my-auto    ">
     <button @click="next" v-if="currentSlide!==IphoneData.length "  class="cursor-pointer rounded-3xl bg-orange-600 w-10 h-10  ">
       <next-heroicon class="h-5 ml-2"  ></next-heroicon>
     </button>
@@ -33,6 +33,7 @@ type iphoneDataType = {
   id: number;
   color: string;
   type: string;
+  rate:number;
 }[];
 export default defineComponent({
   components: { baseSlide, previousHeroicon, NextHeroicon },

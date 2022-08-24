@@ -15,9 +15,12 @@ let samsung = [
     secImg: imgeHoverOne,
     desc: "Samsung Galaxy S22 ULTRA BRUSHED TITANIUM Metallic Skin",
     price: "25₪",
+    descount:"20₪",
     id: 1,
     color: "red",
     type: "samsung",
+    discount:"20₪",
+    rate:-1
   },
   {
     firstImg: imgeTwo,
@@ -27,6 +30,10 @@ let samsung = [
     id: 2,
     color: "blue",
     type: "samsung",
+    discount:"20₪",
+    rate:-1
+
+
   },
   {
     firstImg: imgeThree,
@@ -36,6 +43,10 @@ let samsung = [
     id: 3,
     color: "black",
     type: "samsung",
+    discount:"20₪",
+    rate:-1
+
+
   },
   {
     firstImg: imgeFour,
@@ -45,6 +56,8 @@ let samsung = [
     id: 4,
     color: "green",
     type: "samsung",
+    rate:-1
+
   },
   {
     firstImg: imgeFive,
@@ -54,6 +67,9 @@ let samsung = [
     id: 5,
     color: "yellow",
     type: "samsung",
+    discount:"20₪",
+    rate:-1
+
   },
   {
     firstImg: imgeFive,
@@ -63,6 +79,8 @@ let samsung = [
     id: 6,
     color: "yellow",
     type: "samsung",
+    rate:-1
+
   },
   {
     firstImg: imgeFive,
@@ -72,6 +90,8 @@ let samsung = [
     id: 7,
     color: "yellow",
     type: "samsung",
+    rate:-1
+
   },
   {
     firstImg: imgeFive,
@@ -81,6 +101,8 @@ let samsung = [
     id: 8,
     color: "yellow",
     type: "samsung",
+    rate:-1
+
   },
   {
     firstImg: imgeFive,
@@ -90,6 +112,8 @@ let samsung = [
     id: 9,
     color: "yellow",
     type: "samsung",
+    rate:-1
+
   },
   {
     firstImg: imgeFive,
@@ -99,6 +123,8 @@ let samsung = [
     id: 10,
     color: "yellow",
     type: "samsung",
+    rate:-1
+
   },
   {
     firstImg: imgeFive,
@@ -108,6 +134,8 @@ let samsung = [
     id: 10,
     color: "yellow",
     type: "samsung",
+    rate:-1
+
   },
   {
     firstImg: imgeFive,
@@ -117,6 +145,8 @@ let samsung = [
     id: 10,
     color: "yellow",
     type: "samsung",
+    rate:-1
+
   },
   
 ];
@@ -153,6 +183,7 @@ import imgeHoverThirteen from "../assets/img/iphone/iphone-hover/imge-hover-thir
 import imgeHoverFourteen from "../assets/img/iphone/iphone-hover/imge-hover-fourteen.webp";
 import imgeHoverFifteen from "../assets/img/iphone/iphone-hover/imge-hover-fifteen.webp";
 import imgeHover from '../assets/img/samsung-s22-ultra/imgeHover.jpg'
+import starHeroSvgVue from "../components/star-hero-svg.vue";
 
 let Iphone = [
   {
@@ -160,9 +191,12 @@ let Iphone = [
     secImg: imgeHoveOne,
     desc: "iPhone 13 Pro MAX SIGNATURE Art in FLORENCE Skin",
     price: "25₪",
+    discount:"20₪",
     id: 1,
     color: "red",
     type: "iphone",
+    rate:-1
+
   },
   {
     firstImg: imgTwo,
@@ -171,6 +205,8 @@ let Iphone = [
     price: "25₪",
     id: 2,
     color: "red",
+    discount:"20₪",
+    rate:-1,
     type: "iphone",
   },
   {
@@ -181,6 +217,8 @@ let Iphone = [
     id: 3,
     color: "red",
     type: "iphone",
+    rate:-1
+
   },
   {
     firstImg: imgFour,
@@ -188,6 +226,8 @@ let Iphone = [
     desc: "iPhone 13 Pro MAX SIGNATURE Art in FLORENCE Skin",
     price: "25₪",
     id: 4,
+    discount:"20₪",
+    rate:-1,
     color: "red",
     type: "iphone",
   },
@@ -199,6 +239,8 @@ let Iphone = [
     id: 5,
     color: "red",
     type: "iphone",
+    rate:-1
+
   },
   {
     firstImg: imgeSix,
@@ -207,6 +249,9 @@ let Iphone = [
     price: "25₪",
     id: 6,
     color: "red",
+    discount:"20₪",
+    rate:-1,
+
     type: "iphone",
   },
   {
@@ -217,6 +262,8 @@ let Iphone = [
     id: 7,
     color: "red",
     type: "iphone",
+    rate:-1
+
   },
   {
     firstImg: imgeEight,
@@ -225,6 +272,9 @@ let Iphone = [
     price: "25₪",
     id: 8,
     color: "red",
+    discount:"20₪",
+    rate:-1,
+
     type: "iphone",
   },
   {
@@ -235,6 +285,8 @@ let Iphone = [
     id: 9,
     color: "red",
     type: "iphone",
+    rate:-1
+
   },
   {
     firstImg: imgeTen,
@@ -244,6 +296,8 @@ let Iphone = [
     id: 10,
     color: "red",
     type: "iphone",
+    rate:-1
+
   },
   {
     firstImg: imgeEleven,
@@ -253,6 +307,8 @@ let Iphone = [
     id: 11,
     color: "red",
     type: "iphone",
+    rate:-1
+
   },
   {
     firstImg: imgeTwelve,
@@ -262,6 +318,10 @@ let Iphone = [
     id: 12,
     color: "red",
     type: "iphone",
+    discount:"20₪",
+    rate:-1
+
+
   },
   {
     firstImg: imgeThirteen,
@@ -271,6 +331,8 @@ let Iphone = [
     id: 13,
     color: "red",
     type: "iphone",
+    rate:-1
+
   },
   {
     firstImg: imgeFourteen,
@@ -280,6 +342,8 @@ let Iphone = [
     id: 14,
     color: "red",
     type: "iphone",
+    rate:-1
+
   },
   {
     firstImg: imgeFifteen,
@@ -289,6 +353,8 @@ let Iphone = [
     id: 15,
     color: "red",
     type: "iphone",
+    rate:-1
+
   },
   {
     firstImg: imgeFifteen,
@@ -298,6 +364,8 @@ let Iphone = [
     id: 16,
     color: "red",
     type: "iphone",
+    rate:-1
+
   },
  
 ];
@@ -329,6 +397,12 @@ export function getSkin() {
       if (skinId === samsung[i].id) {
         return samsung[i];
       }
+      
     }
   }
+
+}
+export function setRate (rate:number, type:string){
+  skinType = type;
+  skinId = rate;
 }

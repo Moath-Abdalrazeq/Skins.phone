@@ -2,9 +2,11 @@
 import { defineComponent, ref } from 'vue'
 import StatHeroIcon from './star-hero-icon.vue'
 export default defineComponent({
-    components:{ StatHeroIcon,  },
+    components:{ StatHeroIcon },
     
-    setup() {
+    setup(props,{emit}) {
+      
+ 
    let Stars= [{
     id:1,
     name:"StatHeroIcon",
@@ -33,8 +35,11 @@ export default defineComponent({
    }
 
    ]
-   let starHover =ref(false)
-   return{Stars,starHover}
+   function getRate(rate:number) {
+    emit("onRateChange",)
+    
+   }
+   return{Stars,getRate}
 
     },
     
@@ -43,8 +48,9 @@ export default defineComponent({
 </script>
 
 <template>
-    <div v-for="Star in Stars" :key="Star.id" class=" w-4">
+    <div v-for="Star in Stars" :key="Star.id"  class="w-4 hover:text-orange-500" >
     <component :is="Star.name">
+    <button @click="getRate(Star.id)"><stat-hero-icon></stat-hero-icon></button>
     
     </component>
   

@@ -12,6 +12,7 @@ type skinType = {
   id: number;
   color: string;
   type: string;
+  rate:number;
 };
 export default defineComponent({
   name: "coverSkins",

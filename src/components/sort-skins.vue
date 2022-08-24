@@ -12,9 +12,9 @@ export default defineComponent({
 })
 </script>
 <template>
-<div class="  justify-around  flex     mt-6  ">
-   <filter-view></filter-view>
-   <select class="bg-black text-gray-400 border-solid border-2 border-gray-400  "  >
+<div class=" right-4 lg:right-10  absolute font-mono   ">
+   
+   <select class="bg-black text-gray-400 border-solid border-2 border-gray-400 w-44 lg:w-80 p-2  "  >
     <option>Featured</option>
     <option>Best selling</option>
     <option>Alphabetically, A-Z</option>
