@@ -42,7 +42,7 @@ import closeHero from './close-hero.vue'
 <!-- menu ---------------------------------->
    <ul :class="{'bg-black h-screen absolute right-0 top-5 lg:flex w-11/12   ':showMenu ,'hidden lg:flex':!showMenu }"  >
    <div  >
-<div class="   justify-between mx-7 text-2xl text-gray-400 lg:h-10   w-full lg:text-xl  lg:flex " > 
+<div class="  justify-between mx-7 text-2xl text-gray-400 lg:h-10   w-full lg:text-xl  lg:flex  " > 
   <button @click="showMenu=false" v-if="showMenu" class="lg:hidden text-white "> <close-hero ></close-hero></button> <hr class="lg:hidden w-4/5">
  <li class="lg:p-0 py-4 "><router-link to="/" >Home</router-link> </li><hr class="lg:hidden w-4/5">
  <li class="lg:p-0 py-4 "><exclusive-collections></exclusive-collections></li><hr class="lg:hidden w-4/5">
@@ -52,6 +52,10 @@ import closeHero from './close-hero.vue'
    <li class="lg:p-0 py-4 "><skins-for-laptops-tablets></skins-for-laptops-tablets></li><hr class="lg:hidden w-4/5">
    <li class="lg:p-0 py-4 "><a>EZY Cases</a></li><hr class="lg:hidden w-4/5">
    <li class="lg:p-0 py-4 "><help-and-faq></help-and-faq></li><hr class="lg:hidden w-4/5  ">   
+   <router-link to="/loginPage"
+         class="   hover:text-white lg:hidden ">
+          Login
+         </router-link><hr class="lg:hidden w-4/5  "> 
 </div>
    </div>
  </ul  >

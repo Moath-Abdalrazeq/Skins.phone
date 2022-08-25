@@ -31,6 +31,7 @@ export default defineComponent({
   
     return {switchImge ,imgeView};
   },
+  
 });
 </script>
 
