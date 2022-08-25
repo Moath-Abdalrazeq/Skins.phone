@@ -52,6 +52,10 @@ import closeHero from './close-hero.vue'
    <li class="lg:p-0 py-4 "><skins-for-laptops-tablets></skins-for-laptops-tablets></li><hr class="lg:hidden w-4/5">
    <li class="lg:p-0 py-4 "><a>EZY Cases</a></li><hr class="lg:hidden w-4/5">
    <li class="lg:p-0 py-4 "><help-and-faq></help-and-faq></li><hr class="lg:hidden w-4/5  ">   
+   <router-link to="/loginPage"
+         class="   hover:text-white lg:hidden ">
+          Login
+         </router-link><hr class="lg:hidden w-4/5  "> 
 </div>
    </div>
  </ul  >
