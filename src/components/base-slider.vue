@@ -136,7 +136,7 @@ export default defineComponent({
       tempSlide,
       initSlids,
       getId,
-      currentSlideSmall,
+       currentSlideSmall,
       initSlidsSmall,
       tempSmall,
       prevsmall,

@@ -1,14 +1,22 @@
-<template>
-<div class=" text-gray-400 mt-8 ml-8"> {{route.fullPath}}</div>
-<div class="text-gray-400 text-center text-2xl">Samsung Galaxy S22 ULTRA Skins </div>
- <div> <sort-skin></sort-skin></div>
-<div class="text-gray-400 text-center text-base my-4">Full-Body Skins for Samsung Galaxy S22 ULTRA (6.8" display, 2022) </div>
-<div  class="   max-w-5xl mx-auto    " >
-<div class=" flex justify-between flex-wrap ">
-  <div v-for="(slid, index) in samsungData" :key="index" class="my-4"  >
+ <template>
+<div class=" mb-5 text-gray-400 mt-8 ml-8"> {{route.fullPath}}</div>
+<div class=" text-gray-400 font-semibold text-xl  text-center lg:text-2xl"> Samsung Galaxy S22 ULTRA Skins</div>
+ <div class=" flex lg:mb-8 mt-5 ">
+ <span >
+   <sort-skin></sort-skin>
+   <filter-view></filter-view>
+  </span>
+  </div>
+  
+<div class="text-gray-400 text-center text-base my-4 font-mono">Full-Body Skins for Samsung Galaxy S22 ULTRA (6.8" display, 2022) </div>
+
+<div  class="  lg:max-w-5xl mx-auto    " >
+ 
+<div class="  flex lg:justify-between flex-wrap  ">
+  <div v-for="(slid, index) in samsungData" :key="index" class="my-4 "  >
     <router-link to="/skinsPage">
       <button @click="getId(slid.id, slid.type)"  >
-   <base-slide :slidData="slid"  ></base-slide> 
+   <base-slide :slidData="slid" class=""  ></base-slide> 
       </button>
     </router-link>
   </div>
@@ -18,9 +26,11 @@
 <script lang="ts">
 import { useRoute } from "vue-router";
 import sortSkin from './sort-skins.vue'
+ 
 import { getSamsungData, setSkin } from "../services/base-skins.service";
-import { defineComponent, ref } from "vue";
+import { defineComponent, onMounted, ref } from "vue";
 import baseSlide from "./base-slide.vue";
+import filterView from './filter-view.vue'
 type samsungDataType = {
   firstImg: string;
   secImg: string;
@@ -29,17 +39,19 @@ type samsungDataType = {
   id: number;
   color: string;
   type: string;
-} ;
+   
+} [];
 export default defineComponent({
-  components: { baseSlide,sortSkin },
+  components: { baseSlide,sortSkin,filterView },
   setup() {
+    
     const route = useRoute();
-    let samsungData = ref<samsungDataType []>(getSamsungData());
+    let samsungData = ref<samsungDataType >(getSamsungData());
     function getId(id: number, type: string) {
       setSkin(id, type);
     }
+   
     return {samsungData, getId,route };
   },
-
 });
 </script>

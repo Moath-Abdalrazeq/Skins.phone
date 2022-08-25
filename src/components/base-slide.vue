@@ -1,5 +1,5 @@
 <template>
-<div class=" lg:w-56 lg:text-sm  w-60 my-auto ">
+<div class=" lg:w-56 lg:text-sm  w-48 my-auto ">
   <div class=" ">
     <h3 v-if="slidData.discount"   class="    text-xs lg:text-base text-black bg-orange-500   w-20">Save ₪5</h3>
  
