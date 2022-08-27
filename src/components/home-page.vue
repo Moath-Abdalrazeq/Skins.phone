@@ -1,81 +1,29 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-import skinsPhone from "../assets/img/header.png"
-import ExclusiveCollections from './exclusive-collections.vue';
-import SearchHero from './search-hero.vue';
-import SkinsForSmartphone from './skins-for-smartphone.vue';
-import UserHero from './user-hero.vue';
-import SkinsForLaptopsTablets from './skins-for-laptops-tablets.vue';
-import HelpAndFaq from './help-and-faq.vue';
-import CartHero from './cart-hero.vue';
-import searchBar from './search-bar.vue'
-import BaseSlider from './base-slider.vue'
+   import headerImg from  '../assets/img/skins-image.gif';
+
+     import BaseSlider from './base-slider.vue';
+import FooterPages from './footer-pages.vue';
+import HeaderMenu from './header-menu.vue';
 import ImgeSamsungS22Ultra from './imge-samsung-s22-ultra.vue';
-import LoginForm from './login-form.vue';
-import MenuHero from './menu-hero.vue';
-import closeHero from './close-hero.vue'
- import headerImg from  '../assets/img/skins-image.gif'
- export default defineComponent({
+     export default defineComponent({
     name: "skinsPhone",
-      components: {SearchHero,UserHero,closeHero,SkinsForSmartphone, ExclusiveCollections, SkinsForLaptopsTablets, HelpAndFaq ,  CartHero,searchBar ,BaseSlider, ImgeSamsungS22Ultra, LoginForm, MenuHero   },
+      components: { BaseSlider, ImgeSamsungS22Ultra,HeaderMenu, FooterPages},
    setup() {
-     let showMenu = ref(false)
-        return {skinsPhone ,showMenu, headerImg};
+     
+        return {  headerImg  };
     },
 })
 </script>
 <template  >
- <!--image header -------------------------------> 
+
+    <!--image header -------------------------------> 
  <div class=" h-96 lg:bg-cover w-full bg-fixed bg-no-repeat" :style="{
       'background-image': `url(${headerImg})` 
     }" >
  </div>
-   <section>
-      <div   class="bg-black fixed  top-0  w-full ">
-<div class=" w-full  pt-5">
- <!-- logo ------------------------------>
-<div class=" flex justify-between lg:justify-around "> 
-      <div class=" flex w-10 h-10 lg:mt-4">
-   <img :src="skinsPhone" class="rounded-3xl"/>
-   <span class="text-gray-400  ml-2 text-xl lg:text-xl"> Skins.phone </span> 
-      </div>
-<!-- menu ---------------------------------->
-   <ul :class="{'bg-black h-screen absolute right-0 top-5 lg:flex w-11/12   ':showMenu ,'hidden lg:flex':!showMenu }"  >
-   <div  >
-<div class="  justify-between mx-7 text-2xl text-gray-400 lg:h-10   w-full lg:text-xl  lg:flex  " > 
-  <button @click="showMenu=false" v-if="showMenu" class="lg:hidden text-white "> <close-hero ></close-hero></button> <hr class="lg:hidden w-4/5">
- <li class="lg:p-0 py-4 "><router-link to="/" >Home</router-link> </li><hr class="lg:hidden w-4/5">
- <li class="lg:p-0 py-4 "><exclusive-collections></exclusive-collections></li><hr class="lg:hidden w-4/5">
- <li class="lg:p-0 py-4 "><skins-for-smartphone></skins-for-smartphone></li><hr class="lg:hidden w-4/5">
-</div>
-<div class="justify-between mx-7 text-2xl lg:flex text-gray-400 lg:h-10  w-full  lg:text-xl ">
-   <li class="lg:p-0 py-4 "><skins-for-laptops-tablets></skins-for-laptops-tablets></li><hr class="lg:hidden w-4/5">
-   <li class="lg:p-0 py-4 "><a>EZY Cases</a></li><hr class="lg:hidden w-4/5">
-   <li class="lg:p-0 py-4 "><help-and-faq></help-and-faq></li><hr class="lg:hidden w-4/5  ">   
-   <router-link to="/loginPage"
-         class="   hover:text-white lg:hidden ">
-          Login
-         </router-link><hr class="lg:hidden w-4/5  "> 
-</div>
-   </div>
- </ul  >
-<!-- logo search , user and cart  --------------------------->
-    <div class=" flex  text-gray-400 h-6 mr-2 lg:mt-4  " >
-     <search-bar></search-bar> 
-        <router-link to="/loginPage"
-         class=" mx-2 lg:inline-block  hover:text-white hidden ">
-         <user-hero class="h-6 "></user-hero>
-         </router-link>
-           <button  @click="showMenu=!showMenu" type="button" class="lg:hidden"> 
-<menu-hero></menu-hero>
-   </button>
-       <cart-hero></cart-hero>  
-    </div>  
-</div>
-</div>
-</div>
-
-   </section>
+ <!-- header menu ----------------------------------------------------->
+ <header-menu></header-menu>
 <!-- Skins images and description for  GALAXY S22 ULTRA  -->
 <div class=" text-gray-400 text-center p-10   text-xl   mt-10      ">
 <div>
@@ -96,5 +44,6 @@ import closeHero from './close-hero.vue'
     <base-slider></base-slider>  
   </div>
   </div> 
+  <footer-pages></footer-pages>
 </template>
  

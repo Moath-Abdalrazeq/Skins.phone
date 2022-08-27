@@ -1,4 +1,19 @@
+ <script lang="ts">
+ import { defineComponent } from 'vue'
+ import headerMenu from './header-menu.vue'
+ import cartHero from './cart-hero.vue'
+ export default defineComponent({
+  components:{cartHero,headerMenu },
+  setup() {
+    
+  },
+ })
+ </script>
+ 
+ 
+ 
  <template>
+ <header-menu></header-menu>
   <div class="flex lg:justify-center lg:items-center mt-10  h-screen  ">
     <div class="w-full max-w-lg  "> 
       <form class="bg-black  ">

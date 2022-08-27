@@ -9,7 +9,7 @@ export default defineComponent({
 </script>
 <template>
     <div class=" relative inline-block hover:block    z-20  ">
-   <button class="peer   hover: text-gray-400 hover:underline  ">  <a class="hover:p-2"> Exclusive Collections </a>  <arrow-hover></arrow-hover> </button>
+   <button class="peer   hover: text-gray-400 hover:underline  ">  <a > Exclusive Collections </a>  <arrow-hover></arrow-hover> </button>
    <div class="hidden peer-hover:flex hover:flex flex-col bg-black text-sm   text-white">
     <a href="#" class="px-5 py-3 hover:translate-x-2">CLEARANCE</a>
     <a href="#" class="px-5 py-3 hover:translate-x-2">3D CHARCOAL</a>
