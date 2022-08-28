@@ -1,7 +1,7 @@
 <template>
 
    <div class="sticky top-0" >
-     
+      <div  >
        <div    class="bg-black       w-full  ">
 <div class=" w-full  pt-5">
  <!-- logo ------------------------------>
@@ -43,6 +43,7 @@
 </div>
 </div>
       </div>
+   </div>
   
 </template>
 
