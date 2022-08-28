@@ -16,26 +16,23 @@ import ImgeSamsungS22Ultra from './imge-samsung-s22-ultra.vue';
 })
 </script>
 <template  >
-
     <!--image header -------------------------------> 
- <div class=" h-96 lg:bg-cover w-full bg-fixed bg-no-repeat" :style="{
-      'background-image': `url(${headerImg})` 
-    }" >
+ <div class=" h-96 lg:bg-cover  w-full bg-fixed bg-no-repeat  " :style="{'background-image': `url(${headerImg})`  }" >
  </div>
  <!-- header menu ----------------------------------------------------->
  <header-menu></header-menu>
 <!-- Skins images and description for  GALAXY S22 ULTRA  -->
-<div class=" text-gray-400 text-center p-10   text-xl   mt-10      ">
+<div class=" text-gray-400 text-center lg:p-10   text-xl   mt-10      ">
 <div>
     <span> Introducing GALAXY S22 ULTRA</span>
     <router-link to="/homePage/viewS22Ultra" class="hidden justify-end lg:flex ">View all</router-link>
    </div>   
-   <div class="overflow-x-auto  ">
+   <div class="overflow-x-auto    ">
   <imge-samsung-s-22-ultra></imge-samsung-s-22-ultra>
    </div>
   </div>
  <!-- Skins images and description for  IPHONE 13 PRO  -->
-  <div class="  text-gray-400 p-10 lg:text-xl text-center mt-10  ">
+  <div class="  text-gray-400 lg:p-10 lg:text-xl text-center mt-10  ">
    <div>
     <span>iPhone 13 Pro MAX Skins & iPhone 13 PRO Skins</span>
     <router-link to="/homePage/viewIphone13" class="lg:flex justify-end hidden">View all</router-link>

@@ -1,5 +1,6 @@
 <template>
- <div class="flex lg:justify-center lg:items-center mt-10  h-screen  ">
+  <header-menu></header-menu>
+ <div class="flex  justify-center  items-center mt-10  h-screen  ">
   <div class="w-full max-w-lg  "> 
     <form class=" text-slate-300" >
       <h1 class="  text-center text-3xl mb-14 ">Login </h1>
@@ -24,3 +25,14 @@
  </div>
  </div>
 </template>
+<script lang="ts">
+import { defineComponent } from 'vue'
+import headerMenu from './header-menu.vue'
+ 
+export default defineComponent({
+  components: { headerMenu },
+  setup() {
+    return{ }
+  },
+})
+</script>

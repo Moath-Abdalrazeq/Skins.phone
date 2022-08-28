@@ -1,9 +1,9 @@
 <template>
-<div class=" lg:w-56 lg:text-sm  w-48 my-auto ">
+<div class=" lg:w-56 lg:text-sm  w-36 my-auto ">
   <div class="">
-    <h3 :class="{'invisible':!slidData.discount}"   class="text-xs lg:text-base text-black bg-orange-500   w-20">Save ₪5</h3>
+    <h3 :class="{' invisible':slidData.discount}"   class="text-xs lg:text-base text-black bg-orange-500   w-20">Save ₪5</h3>
  
- <img :src="imgeHover" @mouseover="imgeHover=slidData.secImg" @mouseleave="imgeHover=slidData.firstImg" class="object-contain ml-8 lg:ml-0  lg:h-56 h-36 lg:object-cover "/>  
+ <img :src="imgeHover" @mouseover="imgeHover=slidData.secImg" @mouseleave="imgeHover=slidData.firstImg" class="object-contain     lg:h-56  lg:object-cover "/>  
           
   </div>
 <div class=" text-gray-400   lg:text-lg text-xs">{{slidData.desc}}   </div> 
@@ -30,7 +30,7 @@ import { defineComponent,ref, watch } from 'vue'
     imgeHover.value=props.slidData.firstImg
   })
 
-        return{imgeHover  };
+        return{imgeHover};
  
     },
 })

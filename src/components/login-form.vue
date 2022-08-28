@@ -14,7 +14,7 @@
  
  <template>
  <header-menu></header-menu>
-  <div class="flex lg:justify-center lg:items-center mt-10  h-screen  ">
+  <div class="flex justify-center items-center    h-screen   ">
     <div class="w-full max-w-lg  "> 
       <form class="bg-black  ">
         <h1 class="text-gray-300 text-center text-3xl">Login </h1>
