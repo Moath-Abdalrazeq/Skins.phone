@@ -1,6 +1,6 @@
 <template>
 <header-menu></header-menu>
-<div class="pt-28">
+<div  >
 <div class="   text-gray-400  ml-8  "> {{route.fullPath}}</div>
 <div class=" text-gray-400 font-semibold text-xl  text-center lg:text-2xl">iPhone 13 Pro MAX Skins</div>
  <div class=" flex lg:mb-8 mt-5 justify-around">

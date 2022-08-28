@@ -16,11 +16,12 @@ import ImgeSamsungS22Ultra from './imge-samsung-s22-ultra.vue';
 })
 </script>
 <template  >
+<!-- header menu ----------------------------------------------------->
+ <header-menu></header-menu>
     <!--image header -------------------------------> 
  <div class=" h-96 lg:bg-cover  w-full bg-fixed bg-no-repeat  " :style="{'background-image': `url(${headerImg})`  }" >
  </div>
- <!-- header menu ----------------------------------------------------->
- <header-menu></header-menu>
+  
 <!-- Skins images and description for  GALAXY S22 ULTRA  -->
 <div class=" text-gray-400 text-center lg:p-10   text-xl   mt-10      ">
 <div>

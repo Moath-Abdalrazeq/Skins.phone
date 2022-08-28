@@ -1,12 +1,14 @@
 <template>
-   <section>
-       <div    class="bg-black fixed    top-0  w-full  ">
+
+   <div class="sticky top-0" >
+     
+       <div    class="bg-black       w-full  ">
 <div class=" w-full  pt-5">
  <!-- logo ------------------------------>
 <div class=" flex justify-between lg:justify-around "> 
       <div class=" flex w-10 h-10 lg:mt-4 ">
    <img :src="skinsPhone" class="rounded-3xl"/>
-   <span class="text-gray-400  ml-2 text-xl  "> Skins.phone </span> 
+   <span class="text-gray-400  ml-2 text-xl    "> Skins.phone </span> 
       </div>
 <!-- menu ---------------------------------->
    <ul :class="{'bg-black h-screen absolute right-0 top-5 lg:flex w-11/12   ':showMenu ,'hidden lg:flex ':!showMenu }"  >
@@ -21,7 +23,7 @@
    <li class="lg:p-0 py-4 "><skins-for-laptops-tablets></skins-for-laptops-tablets></li><hr class="lg:hidden w-4/5">
    <li class="lg:p-0 py-4 "><a>EZY Cases</a></li><hr class="lg:hidden w-4/5">
    <li class="lg:p-0 py-4 "><help-and-faq></help-and-faq></li><hr class="lg:hidden w-4/5  ">   
-   <router-link to="/loginPage"> <li class="lg:p-0 py-4 ">Login</li></router-link><hr class="lg:hidden w-4/5  ">   
+   <router-link to="/loginPage"> <li class="lg:p-0 py-4 lg:hidden ">Login</li></router-link><hr class="lg:hidden w-4/5  ">   
 </div>
    </div>
  </ul  >
@@ -40,8 +42,8 @@
 </div>
 </div>
 </div>
-    
-   </section>
+      </div>
+  
 </template>
 
 <script lang="ts">

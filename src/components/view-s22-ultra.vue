@@ -1,7 +1,7 @@
  <template>
    <!-- header menu ----------------------------------------------------->
-<header-menu></header-menu>
-<div class="  pt-28 ">
+  <header-menu  ></header-menu> 
+<div class="    ">
 <div class=" mb-5 text-gray-400   ml-8 "> {{route.fullPath}}</div>
 <div class=" text-gray-400 font-semibold text-xl  text-center lg:text-2xl"> Samsung Galaxy S22 ULTRA Skins</div>
  <div class=" flex  mb-8 mt-5 justify-around">
