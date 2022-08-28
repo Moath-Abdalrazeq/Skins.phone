@@ -1,5 +1,5 @@
 <template>
-<header-menu></header-menu>
+<header-menu  class="text-gray-400 bg-black "></header-menu>
   <div class="flex   lg:justify-center   items-center mt-12  h-screen   ">
     <div class="w-full max-w-xs">
     <h1 class="text-gray-500 text-center mb-2 text-3xl lg:ml-0  ml-10">Create Account</h1>

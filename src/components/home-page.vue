@@ -1,14 +1,14 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-   import headerImg from  '../assets/img/skins-image.gif';
-
-     import BaseSlider from './base-slider.vue';
+import headerImg from  '../assets/img/skins-image.gif';
+import BaseSlider from './base-slider.vue';
 import FooterPages from './footer-pages.vue';
 import HeaderMenu from './header-menu.vue';
 import ImgeSamsungS22Ultra from './imge-samsung-s22-ultra.vue';
+import scrollHeaderMenu from './scroll-header-menu.vue'
      export default defineComponent({
     name: "skinsPhone",
-      components: { BaseSlider, ImgeSamsungS22Ultra,HeaderMenu, FooterPages},
+      components: { BaseSlider, ImgeSamsungS22Ultra,HeaderMenu, FooterPages,scrollHeaderMenu},
    setup() {
      
         return {  headerImg  };
@@ -17,9 +17,11 @@ import ImgeSamsungS22Ultra from './imge-samsung-s22-ultra.vue';
 </script>
 <template  >
 <!-- header menu ----------------------------------------------------->
- <header-menu></header-menu>
+   
     <!--image header -------------------------------> 
  <div class=" h-96 lg:bg-cover  w-full bg-fixed bg-no-repeat  " :style="{'background-image': `url(${headerImg})`  }" >
+ <scroll-header-menu></scroll-header-menu> 
+   
  </div>
   
 <!-- Skins images and description for  GALAXY S22 ULTRA  -->
@@ -44,4 +46,6 @@ import ImgeSamsungS22Ultra from './imge-samsung-s22-ultra.vue';
   </div> 
   <footer-pages></footer-pages>
 </template>
+ 
+ 
  

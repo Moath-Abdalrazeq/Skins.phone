@@ -13,7 +13,7 @@
  
  
  <template>
- <header-menu></header-menu>
+ <header-menu  class="text-gray-400 bg-black " ></header-menu>
   <div class="flex justify-center items-center    h-screen   ">
     <div class="w-full max-w-lg  "> 
       <form class="bg-black  ">
