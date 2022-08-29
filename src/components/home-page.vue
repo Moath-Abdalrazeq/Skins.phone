@@ -15,20 +15,19 @@ import LoginForm from './login-form.vue';
 import MenuHero from './menu-hero.vue';
 import closeHero from './close-hero.vue'
  import headerImg from  '../assets/img/skins-image.gif'
+
  export default defineComponent({
     name: "skinsPhone",
-      components: {SearchHero,UserHero,closeHero,SkinsForSmartphone, ExclusiveCollections, SkinsForLaptopsTablets, HelpAndFaq ,  CartHero,searchBar ,BaseSlider, ImgeSamsungS22Ultra, LoginForm, MenuHero   },
+      components: {SearchHero,UserHero,closeHero,SkinsForSmartphone, ExclusiveCollections, SkinsForLaptopsTablets, HelpAndFaq ,  CartHero,searchBar ,BaseSlider, ImgeSamsungS22Ultra, LoginForm, MenuHero,     },
    setup() {
      let showMenu = ref(false)
         return {skinsPhone ,showMenu, headerImg};
     },
 })
 </script>
-<template  >
+<template>   
  <!--image header -------------------------------> 
- <div class=" h-96 lg:bg-cover w-full bg-fixed bg-no-repeat" :style="{
-      'background-image': `url(${headerImg})` 
-    }" >
+ <div class="  bg-contain h-96  lg:w-full lg:bg-cover  bg-fixed bg-no-repeat" :style="{'background-image': `url(${headerImg})`}">
  </div>
    <section>
       <div   class="bg-black fixed  top-0  w-full ">
@@ -80,9 +79,9 @@ import closeHero from './close-hero.vue'
 <div class=" text-gray-400 text-center p-10   text-xl   mt-10      ">
 <div>
     <span> Introducing GALAXY S22 ULTRA</span>
-    <router-link to="/homePage/viewS22Ultra" class="hidden justify-end lg:flex ">View all</router-link>
+    <router-link to="/homePage/viewS22Ultra" class=" justify-end flex mt-5 mb-3">View all</router-link>
    </div>   
-   <div class="overflow-x-auto  ">
+   <div class=" overflow-auto">
   <imge-samsung-s-22-ultra></imge-samsung-s-22-ultra>
    </div>
   </div>
@@ -90,11 +89,14 @@ import closeHero from './close-hero.vue'
   <div class="  text-gray-400 p-10 lg:text-xl text-center mt-10  ">
    <div>
     <span>iPhone 13 Pro MAX Skins & iPhone 13 PRO Skins</span>
-    <router-link to="/homePage/viewIphone13" class="lg:flex justify-end hidden">View all</router-link>
     </div>
     <div class=" ">
     <base-slider></base-slider>  
+    <div class="mt-8 bg-orange-600 w-24  m-auto h-10 p-1  ">
+        <router-link to="/homePage/viewIphone13" class="lg:flex justify-center">View all</router-link>
+</div>
   </div>
-  </div> 
+  </div>
+ 
 </template>
  
