@@ -1,18 +1,17 @@
 <template>
-<div class=" mb-5 text-gray-400 mt-8 ml-8"> {{route.fullPath}}</div>
+<header-menu  class="text-gray-400 bg-black"></header-menu>
+<div  >
+<div class="   text-gray-400  ml-8  "> {{route.fullPath}}</div>
 <div class=" text-gray-400 font-semibold text-xl  text-center lg:text-2xl">iPhone 13 Pro MAX Skins</div>
- <div class=" flex lg:mb-8 mt-5 ">
- <span >
+ <div class=" flex lg:mb-8 mt-5 justify-around">
+  <filter-view></filter-view>
    <sort-skin></sort-skin>
-   <filter-view></filter-view>
-  </span>
-  </div>
+   
   
+  </div>
 <div class="text-gray-400 text-center text-base my-4 font-mono">Full-Body Skins & Wraps for the iPhone 13 Pro MAX (6.7" display, 2021) </div>
-
 <div  class="  lg:max-w-5xl mx-auto    " >
- 
-<div class="  flex lg:justify-between flex-wrap  ">
+<div class="  flex justify-around  lg:justify-between flex-wrap  ">
   <div v-for="(slid, index) in IphoneData" :key="index" class="my-4 "  >
     <router-link to="/skinsPage">
       <button @click="getId(slid.id, slid.type)"  >
@@ -20,6 +19,7 @@
       </button>
     </router-link>
   </div>
+</div>
 </div>
 </div>
 </template>
@@ -30,6 +30,7 @@ import filterView from './filter-view.vue'
 import { useRoute } from "vue-router";
 import { defineComponent, onMounted, ref } from "vue";
 import baseSlide from "./base-slide.vue";
+import HeaderMenu from "./header-menu.vue";
 type iphoneDataType = {
   firstImg: string;
   secImg: string;
@@ -42,7 +43,7 @@ type iphoneDataType = {
 }[];
 export default defineComponent({
    
-  components: { baseSlide,sortSkin,filterView },
+  components: { baseSlide,sortSkin,filterView, HeaderMenu },
   setup() {
     
   const route = useRoute();

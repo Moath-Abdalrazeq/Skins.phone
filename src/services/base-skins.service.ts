@@ -302,7 +302,8 @@ let Iphone = [
     secImg: imgeHoveTwo,
     desc: "iPhone 13 Pro MAX SIGNATURE Art in FLORENCE Skin",
     price: "25₪",
-     
+    discount:"",
+
     id: 2,
     color: "red",
     type: "iphone",
@@ -322,7 +323,7 @@ let Iphone = [
     secImg: imgeHoveFive,
     desc: "iPhone 13 Pro MAX SIGNATURE Art in FLORENCE Skin",
     price: "25₪",
-     
+    discount:"",
     id: 4,
     color: "red",
     type: "iphone",
@@ -342,7 +343,7 @@ let Iphone = [
     secImg: imgeHoverEight,
     desc: "iPhone 13 Pro MAX SATIN BLUE Metallic Skin",
     price: "25₪",
-     
+    discount:"",
     id: 6,
     color: "red",
     type: "iphone",
@@ -362,7 +363,7 @@ let Iphone = [
     secImg: imgeHoverNine,
     desc: "iPhone 13 Pro MAX Military Green Metallic Skin",
     price: "25₪",
-    
+    discount:"",
     id: 8,
     color: "red",
     type: "iphone",
@@ -422,7 +423,7 @@ let Iphone = [
     secImg:imgeHoverFourteen,
     desc: "iPhone 13 Pro MAX SIGNATURE Gold in the Veins Skin",
     price: "25₪",
-     
+    discount:"",
     id: 14,
     color: "red",
     type: "iphone",

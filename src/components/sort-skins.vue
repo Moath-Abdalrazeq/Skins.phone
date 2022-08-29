@@ -12,7 +12,7 @@ export default defineComponent({
 })
 </script>
 <template>
-<div class=" right-4 lg:right-10  absolute font-mono   ">
+<div class=" right-4 lg:right-10    font-mono   ">
    
    <select class="bg-black text-gray-400 border-solid border-2 border-gray-400 w-44 lg:w-80 p-2  "  >
     <option>Featured</option>

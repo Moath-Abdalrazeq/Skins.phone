@@ -13,7 +13,7 @@ export default defineComponent({
 <template>
 
      <div class="relative inline-block hover:block   z-30">
- <button class="peer    hover: text-gray-400 hover:underline">  <a class="   "> Skins for smartphone  </a> <arrow-hover></arrow-hover> </button>
+ <button class="peer     hover:underline">  <a class="   "> Skins for smartphone  </a> <arrow-hover></arrow-hover> </button>
    <div class="hidden peer-hover:flex hover:flex flex-col bg-black text-sm     text-white">
     <a href="#" class="px-5 py-3 hover:translate-x-2  ">iPhone Skins</a>
     <a href="#" class="px-5 py-3 hover:translate-x-2 ">Samsung Skins</a>
