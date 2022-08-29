@@ -32,7 +32,7 @@
             <div class="lg:space-y-3   ">
 					<div  class=" uppercase  text-gray-50     ">Social Media</div>
 					<div class=" flex justify-start space-x-3  ">
-						<a href="#" title="Facebook" class="flex items-center p-1">
+						<a href="https://www.facebook.com/phonecaeses" title="Facebook" class="flex items-center p-1">
 							 <face-icon></face-icon>
 						</a>
 						<a  href="#" title="Instagram" class="flex items-center p-1">
