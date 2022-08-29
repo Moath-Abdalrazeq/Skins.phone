@@ -1,5 +1,5 @@
  <template>
-	<footer class=" bg-gray-800  text-gray-300  lg:py-10 mt-6  lg:mt-0    ">
+	<footer class=" bg-gray-800  text-gray-300  lg:py-10 mt-6  lg:mt-0  ">
      
     <div class=" lg:flex   justify-around ml-5   " >     
 <button @click="showFooterMenu=!showFooterMenu" class="lg:hidden mt-4  " >The Important Stuff <arrow-hover class="h-4 w-4"></arrow-hover></button>  

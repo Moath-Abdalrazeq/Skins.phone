@@ -35,9 +35,7 @@ export default defineComponent({
         
        }
        onMounted(init);
-        return{
-            
-        }
+        
     },
 })
 </script>
