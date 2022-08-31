@@ -1,9 +1,9 @@
 <template>
 <!-- small next and prev ---------------------------------->
-<div class="flex justify-around  lg:hidden   w-full   ">
+<div class="flex justify-around  lg:hidden   w-full  ">
   <div class="my-auto ">
     <button @click="prevsmall" v-if="currentSlideSmall!==2 "   class="cursor-pointer rounded-3xl bg-orange-600 w-10 h-10   ">
-      <previous-heroicon class="h-5 ml-2"></previous-heroicon>
+      <previous-heroicon class="h-5 ml-2 "></previous-heroicon>
     </button>
   </div>
   <div v-for="(slid, index) in tempSlideSmall" :key="index" class=" my-auto">
@@ -22,7 +22,7 @@
 <!--  next and prev -------------------------------------------------------------------------------------------------------------------------------->
 <div class="lg:flex   lg:justify-evenly  w-full  hidden ">
   <div class="my-auto ">
-    <button @click="prev" v-if="currentSlide!==5 "   class="cursor-pointer rounded-3xl bg-orange-600 w-10 h-10  ">
+    <button @click="prev" v-if="currentSlide!==5 "   class="cursor-pointer rounded-3xl bg-orange-600 w-10 h-10 ">
       <previous-heroicon class="h-5 ml-2"></previous-heroicon>
     </button>
   </div>

@@ -11,10 +11,10 @@
    <span class="   ml-2 text-xl    "> Skins.phone </span> 
       </div>
 <!-- menu ---------------------------------->
-   <ul :class="{'bg-black h-screen absolute right-0 top-5 lg:flex w-11/12':showMenu ,'hidden lg:flex ':!showMenu }"  >
+   <ul :class="{'bg-black h-screen absolute right-0 top-5 lg:flex w-11/12 text-gray-400':showMenu ,'hidden lg:flex ':!showMenu }"  >
    <div  >
 <div class="  justify-between mx-7 text-2xl  lg:h-10   w-full lg:text-xl  lg:flex  " > 
-  <button @click="showMenu=false" v-if="showMenu" class="lg:hidden   "> <close-hero ></close-hero></button> <hr class="lg:hidden w-4/5">
+  <button @click="showMenu=false" v-if="showMenu" class="lg:hidden  "> <close-hero ></close-hero></button> <hr class="lg:hidden w-4/5">
  <li class="lg:p-0 py-4 "><router-link to="/" >Home</router-link> </li><hr class="lg:hidden w-4/5">
  <li class="lg:p-0 py-4 "><exclusive-collections></exclusive-collections></li><hr class="lg:hidden w-4/5">
  <li class="lg:p-0 py-4 "><skins-for-smartphone></skins-for-smartphone></li><hr class="lg:hidden w-4/5">

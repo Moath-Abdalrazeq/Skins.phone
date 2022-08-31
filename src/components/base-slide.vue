@@ -1,14 +1,15 @@
 <template>
 <div class=" lg:w-56 lg:text-sm  w-36 my-auto ">
   <div class="">
-    <h3 :class="{' invisible':slidData.discount}"   class="text-xs lg:text-base text-black bg-orange-500   w-20">Save ₪5</h3>
- 
+    <div class="flex justify-end">
+    <h3  :class="{' visible':slidData.discount, 'invisible':!slidData.discount}"   class="text-xs lg:text-base text-black bg-orange-500   w-20">Save ₪5</h3>
+    </div>
  <img :src="imgeHover" @mouseover="imgeHover=slidData.secImg" @mouseleave="imgeHover=slidData.firstImg" class="object-contain     lg:h-56  lg:object-cover "/>  
           
   </div>
 <div class=" text-gray-400   lg:text-lg text-xs">{{slidData.desc}}   </div> 
  
-<div class="  text-gray-400 lg:text-sm"> 
+<div class="  text-gray-400 lg:text-sm "> 
 <span v-if="slidData.discount" >{{slidData.discount}} </span> 
 
 <span v-if="slidData.discount">from </span> <span   :class="{ 'line-through':slidData.discount}"> {{slidData.price}}  </span> 

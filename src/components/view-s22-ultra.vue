@@ -13,8 +13,8 @@
   </div> 
 <div class="text-gray-400 text-center text-base my-4 font-mono">Full-Body Skins for Samsung Galaxy S22 ULTRA (6.8" display, 2022) </div>
 <div  class="  lg:max-w-5xl mx-auto     " >
-<div class="  flex justify-around  lg:justify-between flex-wrap  ">
-      <div v-for="(slid, index) in samsungData" :key="index">
+<div   class="  flex justify-around  lg:justify-between flex-wrap  ">
+      <div v-for="(slid, index) in tempData" :key="index">
     <router-link to="/skinsPage">
       <button @click="getId(slid.id, slid.type)" class=" bg-none">
         <base-slide :slidData="slid"></base-slide>
@@ -24,6 +24,7 @@
 </div>
 </div>
 </div>
+<base-pagination @onPageChange="pageChange" :data="samsungData"></base-pagination> 
 </template>
  <script lang="ts">
 import {  getSamsungData, setSkin } from "../services/base-skins.service";
@@ -33,6 +34,7 @@ import { useRoute } from "vue-router";
 import { defineComponent, onMounted, ref } from "vue";
 import baseSlide from "./base-slide.vue";
 import HeaderMenu from "./header-menu.vue";
+import basePagination from './base-pagination.vue'
 type samsungDataType = {
   firstImg: string;
   secImg: string;
@@ -45,17 +47,40 @@ type samsungDataType = {
 }[];
 export default defineComponent({
    
-  components: { baseSlide,sortSkin,filterView, HeaderMenu },
+  components: { baseSlide,sortSkin,filterView, HeaderMenu,basePagination },
   setup() {
     
   const route = useRoute();
+  let currentPage=ref(1)
+  let tempData =ref<samsungDataType>([]);
     let samsungData = ref<samsungDataType>(getSamsungData());
     function getId(id: number, type: string) {
       setSkin(id, type);
     }
+   function pageChange(param:number ) {
+    currentPage.value=param
+    initSamsungData()
+   }
+   function initSamsungData( ) {
+    tempData.value=[]
+    let lastCount =currentPage.value*5
+    if (lastCount>=samsungData.value.length) {
+      lastCount=samsungData.value.length
+    }
+    for (let i = currentPage.value*5-5 ; i < lastCount; i++) {
+
+       
+       tempData.value.push(samsungData.value[i])
+      
+    }
+    }
+   function init( ) {
+    initSamsungData( )
+   }
+   onMounted(init);
    
     return {
-      samsungData,route,
+      samsungData,route,pageChange,tempData,
     
       getId,
     };
