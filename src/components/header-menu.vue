@@ -7,7 +7,7 @@
  <!-- logo ------------------------------>
 <div class=" flex justify-between lg:justify-around "> 
       <router-link to="/" class=" flex w-10 h-10 lg:mt-4 ">
-   <img :src="skinsPhone" class="rounded-3xl"/>
+   <img :src="skinsPhone" class="rounded-full  "/>
    <span class="   ml-2 text-xl    "> Skins.phone </span> 
       </router-link>
 <!-- menu ---------------------------------->
@@ -57,7 +57,7 @@ import CartHero from './cart-hero.vue';
 import searchBar from './search-bar.vue'
 import closeHero from './close-hero.vue'
 import MenuHero from './menu-hero.vue';
-import skinsPhone from "../assets/img/header.png"
+import skinsPhone from "../assets/img/logo-img.png"
 
 import { defineComponent ,ref } from 'vue'
 export default defineComponent({
