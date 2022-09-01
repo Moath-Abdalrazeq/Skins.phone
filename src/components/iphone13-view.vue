@@ -22,8 +22,8 @@
 </div>
 </div>
 </div>
-<base-pagination @onPageChange="pageChange" :data="IphoneData"></base-pagination> 
-
+<base-pagination @onPageChange="pageChange" :data="IphoneData" class="mb-4"></base-pagination> 
+<footer-pages></footer-pages>
 </template>
 <script lang="ts">
 import { getIphoneData, setSkin } from "../services/base-skins.service";
@@ -34,6 +34,7 @@ import { defineComponent, onMounted, ref } from "vue";
 import baseSlide from "./base-slide.vue";
 import HeaderMenu from "./header-menu.vue";
 import basePagination from './base-pagination.vue'
+import FooterPages from './footer-pages.vue'
 type iphoneDataType = {
   firstImg: string;
   secImg: string;
@@ -46,7 +47,7 @@ type iphoneDataType = {
 }[];
 export default defineComponent({
    
-  components: { baseSlide,sortSkin,filterView, HeaderMenu,basePagination },
+  components: { baseSlide,sortSkin,filterView, HeaderMenu,basePagination,FooterPages },
   setup() {
     let currentPage=ref(1)
       let tempData =ref< iphoneDataType>([]);

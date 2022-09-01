@@ -6,10 +6,10 @@
 <div class=" w-full  pt-5">
  <!-- logo ------------------------------>
 <div class=" flex justify-between lg:justify-around "> 
-      <div class=" flex w-10 h-10 lg:mt-4 ">
+      <router-link to="/" class=" flex w-10 h-10 lg:mt-4 ">
    <img :src="skinsPhone" class="rounded-3xl"/>
    <span class="   ml-2 text-xl    "> Skins.phone </span> 
-      </div>
+      </router-link>
 <!-- menu ---------------------------------->
    <ul :class="{'bg-black h-screen absolute right-0 top-5 lg:flex w-11/12 text-gray-400':showMenu ,'hidden lg:flex ':!showMenu }"  >
    <div  >

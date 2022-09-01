@@ -2,8 +2,9 @@
  import { defineComponent } from 'vue'
  import headerMenu from './header-menu.vue'
  import cartHero from './cart-hero.vue'
+ import FooterPages from './footer-pages.vue'
  export default defineComponent({
-  components:{cartHero,headerMenu },
+  components:{cartHero,headerMenu,FooterPages },
   setup() {
     
   },
@@ -43,5 +44,6 @@
       </form> 
     </div>
   </div>
+  <footer-pages></footer-pages>
 </template>
  

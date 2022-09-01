@@ -24,13 +24,15 @@
     </form>
  </div>
  </div>
+ <footer-pages></footer-pages>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
+import FooterPages from './footer-pages.vue'
 import headerMenu from './header-menu.vue'
  
 export default defineComponent({
-  components: { headerMenu },
+  components: { headerMenu, FooterPages },
   setup() {
     return{ }
   },

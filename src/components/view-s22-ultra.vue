@@ -24,7 +24,8 @@
 </div>
 </div>
 </div>
-<base-pagination @onPageChange="pageChange" :data="samsungData"></base-pagination> 
+<base-pagination @onPageChange="pageChange" :data="samsungData" class="mb-4"></base-pagination> 
+<footer-pages></footer-pages>
 </template>
  <script lang="ts">
 import {  getSamsungData, setSkin } from "../services/base-skins.service";
@@ -35,6 +36,7 @@ import { defineComponent, onMounted, ref } from "vue";
 import baseSlide from "./base-slide.vue";
 import HeaderMenu from "./header-menu.vue";
 import basePagination from './base-pagination.vue'
+import FooterPages from "./footer-pages.vue";
 type samsungDataType = {
   firstImg: string;
   secImg: string;
@@ -47,7 +49,7 @@ type samsungDataType = {
 }[];
 export default defineComponent({
    
-  components: { baseSlide,sortSkin,filterView, HeaderMenu,basePagination },
+  components: { baseSlide,sortSkin,filterView, HeaderMenu,basePagination, FooterPages },
   setup() {
     
   const route = useRoute();
